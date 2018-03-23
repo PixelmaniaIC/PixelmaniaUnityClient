@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using Assets;
+using Messages;
 using UnityEngine;
 
 public class ImageManager : MonoBehaviour
@@ -18,7 +19,7 @@ public class ImageManager : MonoBehaviour
     private void Start()
     {
         ImageXOffset = ImageWidth / 100f;
-        ImageYOffset = ImageHeight / 100f;        
+        ImageYOffset = ImageHeight / 100f;
         CreateSquares();
     }
 
@@ -46,13 +47,14 @@ public class ImageManager : MonoBehaviour
             {
                 var obj = Instantiate(ImageSquare, new Vector3(posX, posY, 0), Quaternion.identity);
                 obj.parent = this.transform;
-                
+
                 var square = obj.GetComponent<ImageSquare>();
                 square.Index = 4 * i + j;
                 _squares.Add(square);
-                
+
                 posX += ImageXOffset;
             }
+
             posY -= ImageYOffset;
         }
     }
@@ -65,22 +67,35 @@ public class ImageManager : MonoBehaviour
             {
                 var squareNum = (12 + j) - i * 4;
                 var square = _squares[squareNum];
-                
+
                 var colorBlock = texture.GetPixels(ImageWidth * j, ImageHeight * i, ImageWidth, ImageHeight);
                 var appliedTexture = new Texture2D(ImageWidth, ImageHeight);
-                
+
                 appliedTexture.SetPixels(colorBlock);
                 appliedTexture.Apply();
-                
-                var averageR = colorBlock.Average(x => x.r);
-                var averageG = colorBlock.Average(x => x.g);
-                var averageB = colorBlock.Average(x => x.b);
-                Debug.Log("R = " + averageR + " G = " + averageG + " B = " + averageB);
-                
                 square.Texture = appliedTexture;
-                square.ForegroundColor = new Color(averageR, averageG, averageB);
-                square.UpdateForgroundColor();
+
+//                var averageR = colorBlock.Average(x => x.r);
+//                var averageG = colorBlock.Average(x => x.g);
+//                var averageB = colorBlock.Average(x => x.b);
+//                Debug.Log("R = " + averageR + " G = " + averageG + " B = " + averageB);              
+//                square.ForegroundColor = new Color(averageR, averageG, averageB);
+//                square.UpdateForgroundColor();
             }
+        }
+    }
+
+    // TODO Put pixels in right order
+    public void ReceiveColors(ColorBoxMessage boxes)
+    {
+        Debug.Log("Boxes size " + boxes.cubes.Count);
+        for (var i = 0; i < 16; i++)
+        {
+            var square = _squares.Find(x => x.Index == i);
+            var box = boxes.cubes[15 - i];
+            var color = new Color32((byte) box.r, (byte) box.g, (byte) box.b, 255);
+            square.ForegroundColor = color;
+            square.UpdateForgroundColor();
         }
     }
 
@@ -93,5 +108,4 @@ public class ImageManager : MonoBehaviour
     {
         _squares[1].UpdateForgroundColor();
     }
-
 }

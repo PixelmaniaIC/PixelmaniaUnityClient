@@ -342,10 +342,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007051842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f5365d2b7a644838b142b0f4bd5aaa6, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d3869fe145cc80489e2bea157d27455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageHandler: {fileID: 0}
+  imageHandler: {fileID: 1683412550}
 --- !u!114 &1007051850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007051842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd8ee62f3e9f453a9d3b281fd04f5436, type: 3}
+  m_Script: {fileID: 11500000, guid: 1efd65020da440f45b1f4fa7a74d1bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ImageManager: {fileID: 1683412550}
@@ -724,10 +724,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1683412543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bc4e7fd09b0b90429c89655db621040, type: 3}
+  m_Script: {fileID: 11500000, guid: d210e2ec499ed614f95b6339bed6e484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageSquare: {fileID: 4749518471176738, guid: ba25524cd1ec5234ca91eb494aff2e17,
+  ImageSquare: {fileID: 4749518471176738, guid: a98030ca434b6164886ba04d37f7baa2,
     type: 2}
   ImageWidth: 128
   ImageHeight: 128

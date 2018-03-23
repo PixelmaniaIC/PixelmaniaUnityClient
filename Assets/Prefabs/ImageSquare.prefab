@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4749518471176738}
-  - component: {fileID: 114630215739314276}
   - component: {fileID: 212146353918146660}
   - component: {fileID: 61448601248582388}
+  - component: {fileID: 114550384834058584}
   m_Layer: 0
   m_Name: ImageSquare
   m_TagString: Untagged
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
---- !u!114 &114630215739314276
+--- !u!114 &114550384834058584
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -75,13 +75,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1680692931173354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f80f447164e34451bfe5a83ef0d7cda6, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b07b7ee1a7474e4d8a1b12b6b2f25e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 0
-  height: 0
   Index: 0
-  texture: {fileID: 0}
+  Texture: {fileID: 0}
+  ForegroundColor: {r: 0, g: 0, b: 0, a: 0}
+  Width: 128
+  Height: 128
 --- !u!212 &212146353918146660
 SpriteRenderer:
   m_ObjectHideFlags: 1
