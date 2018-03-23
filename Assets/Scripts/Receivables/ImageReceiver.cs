@@ -5,7 +5,7 @@ namespace Receivables
 {
     public class ImageReceiver : MonoBehaviour, IReceivable
     {
-        public ImageHandler imageHandler;
+        public ImageManager imageHandler;
         
         public string NetworkName
         {
@@ -16,7 +16,7 @@ namespace Receivables
         {
             Debug.Log("Received image " + message.networkName);
             var image = ImagePayload.Build(message.payload).imageBytes;
-            imageHandler.UpdateImage(image);
+            imageHandler.StartCoroutine("DownloadImage", "http://res.cloudinary.com/df0xbva5c/image/upload/v1521716516/randevu.png");
         }
     }
 }

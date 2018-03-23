@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 1007051847}
   - component: {fileID: 1007051848}
   - component: {fileID: 1007051849}
+  - component: {fileID: 1007051850}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -345,6 +346,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageHandler: {fileID: 0}
+--- !u!114 &1007051850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007051842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8ee62f3e9f453a9d3b281fd04f5436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImageManager: {fileID: 1683412550}
 --- !u!21 &1015622796
 Material:
   serializedVersion: 6
@@ -716,6 +729,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImageSquare: {fileID: 4749518471176738, guid: ba25524cd1ec5234ca91eb494aff2e17,
     type: 2}
+  ImageWidth: 128
+  ImageHeight: 128
+  ImageXOffset: 0
+  ImageYOffset: 0
 --- !u!1 &1967392482
 GameObject:
   m_ObjectHideFlags: 0

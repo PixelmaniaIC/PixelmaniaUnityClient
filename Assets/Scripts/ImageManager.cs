@@ -18,18 +18,18 @@ public class ImageManager : MonoBehaviour
     private void Start()
     {
         ImageXOffset = ImageWidth / 100f;
-        ImageYOffset = ImageHeight / 100f;
-        
+        ImageYOffset = ImageHeight / 100f;        
         CreateSquares();
-        var www = new WWW("http://res.cloudinary.com/df0xbva5c/image/upload/v1521716516/randevu.png");
-    
-        // TODO: Replace with Coroutine
-        while (!www.isDone)
-        {
-        }
+    }
 
-        SetTexture(www.texture);
-        ApplyColor(Color.red, 1);
+    IEnumerator DownloadImage(string url)
+    {
+        using (WWW www = new WWW(url))
+        {
+            yield return www;
+
+            SetTexture(www.texture);
+        }
     }
 
     private void CreateSquares()
@@ -86,18 +86,12 @@ public class ImageManager : MonoBehaviour
 
     public void ApplyColor(Color color, int index)
     {
-        var texture = _squares[index].Texture;
+        _squares[index].ApplyReceivedColor(color);
+    }
 
-        for (var i = 0; i < texture.width; i++)
-        {
-            for (var j = 0; j < texture.height; j++)
-            {
-                var current = texture.GetPixel(i, j);
-                var newColor = new Color((current.r + color.r) / 2, (current.g + color.g) / 2, (current.b + color.b) / 2);
-                texture.SetPixel(i, j, newColor);
-            }
-        }
-        texture.Apply();
+    public void SetForegroundColors()
+    {
+        _squares[1].UpdateForgroundColor();
     }
 
 }
