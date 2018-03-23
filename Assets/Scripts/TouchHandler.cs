@@ -29,7 +29,7 @@ public class TouchHandler : MonoBehaviour {
             var payload = new ColorUpdateMessage(selectedColor);
             var payloadJson = JsonUtility.ToJson(payload);
 
-            var message = new Message(PlayerId.instance.val, "ColorChanger", payloadJson);
+            var message = new Message(PlayerId.instance.id, "ColorChanger", payloadJson);
 
 
             _client.SendServerMessage (message);

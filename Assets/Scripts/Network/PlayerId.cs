@@ -6,15 +6,15 @@ public class PlayerId : MonoBehaviour
 {
     public static PlayerId instance = null;
 
-    private string _val = null;
-    public string val
+    private string _id = null;
+    public string id
     {
-        get { return _val; }
+        get { return _id; }
         set
         {
-            if (_val == null)
+            if (_id == null)
             {
-                _val = value;
+                _id = value;
             } else
             {
                 // TODO: We need to delete it!

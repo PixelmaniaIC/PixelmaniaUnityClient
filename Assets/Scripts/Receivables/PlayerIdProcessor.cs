@@ -12,8 +12,8 @@ namespace Assets.GameObjects
 
         public void ReceiveMessage(Message message)
         {
-            PlayerId.instance.val = message.playerId.ToString();
-            Debug.LogWarning(PlayerId.instance.val);
+            PlayerId.instance.id = message.playerId.ToString();
+            Debug.LogWarning(PlayerId.instance.id);
         }
     }
 }
