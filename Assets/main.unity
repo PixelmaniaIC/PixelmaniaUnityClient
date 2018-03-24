@@ -240,7 +240,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ccdbe3450ad6c743b0e768e3da5fd8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: {r: 0, g: 0, b: 0, a: 1}
+  Color:
+    serializedVersion: 2
+    rgba: 4278190080
 --- !u!1 &1007051842
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6abc8a9004ecf44a07ab7c7dab4b8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorState: {fileID: 2119397315}
+  ImageManager: {fileID: 1683412550}
 --- !u!114 &1007051848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57ec9d2347e6194096eb32fd40509aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  host: 52.237.74.136
+  host: localhost
   port: 4040
 --- !u!114 &1007051849
 MonoBehaviour:
@@ -742,6 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ImageSquare: {fileID: 4749518471176738, guid: a98030ca434b6164886ba04d37f7baa2,
     type: 2}
+  ColorState: {fileID: 2119397315}
   ImageWidth: 128
   ImageHeight: 128
   ImageXOffset: 0
@@ -827,6 +830,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c569a835686bf48b37c3fccdd05353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentColor:
+    serializedVersion: 2
+    rgba: 0
 --- !u!212 &2119397316
 SpriteRenderer:
   m_ObjectHideFlags: 0
