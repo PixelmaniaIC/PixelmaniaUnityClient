@@ -11,7 +11,7 @@ namespace Assets
      */
     public class CameraAccess : MonoBehaviour
     {        
-        public Color Color = Color.black;
+        public Color32 Color = new Color(0,0,0);
 
         private Camera _camera;
 
@@ -41,24 +41,24 @@ namespace Assets
          */
         private void FixedUpdate()
         {
-//            if (_renderTexture == null)
-//            {
-//                _rect = new Rect(0, 0, _targetWidth, _targetHeight);
-//                _renderTexture = new RenderTexture(_targetWidth, _targetHeight, 24);
-//                _screenShot = new Texture2D(_targetWidth, _targetHeight, TextureFormat.RGB24, false);
-//            }
-//
-//            _camera.targetTexture = _renderTexture;
-//            _camera.Render();
-//            
-//            RenderTexture.active = _renderTexture;
-//            
-//            _screenShot.ReadPixels(_rect, 0, 0);
-//            
-//            _camera.targetTexture = null;
-//            RenderTexture.active = null;
-//            
-//            Color = _screenShot.GetPixel(_targetXPixel, _targetYPixel);
+            if (_renderTexture == null)
+            {
+                _rect = new Rect(0, 0, _targetWidth, _targetHeight);
+                _renderTexture = new RenderTexture(_targetWidth, _targetHeight, 24);
+                _screenShot = new Texture2D(_targetWidth, _targetHeight, TextureFormat.RGB24, false);
+            }
+
+            _camera.targetTexture = _renderTexture;
+            _camera.Render();
+            
+            RenderTexture.active = _renderTexture;
+            
+            _screenShot.ReadPixels(_rect, 0, 0);
+            
+            _camera.targetTexture = null;
+            RenderTexture.active = null;
+            
+            Color = _screenShot.GetPixel(_targetXPixel, _targetYPixel);
         }
     }
 }

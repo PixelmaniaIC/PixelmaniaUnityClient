@@ -5,18 +5,20 @@ using UnityEngine;
 public class ColorState : MonoBehaviour {
 
     private Renderer _render;
-
-	// Update is called once per frame
+	public Color32 CurrentColor;
+	
 	void Start () {
         _render = gameObject.GetComponent<Renderer>();
 
-        // TODO: what a fuck?
+		// Init state of Color state
+		CurrentColor = Color.blue;
         _render.material.color = Color.blue;
 	}
 
-	public void ColorUpdate(Color color)
+	public void ColorUpdate(Color32 color)
 	{
 		Debug.Log ("Switching color");
+		CurrentColor = color;
 		_render.material.color = color;	
 	}
 }

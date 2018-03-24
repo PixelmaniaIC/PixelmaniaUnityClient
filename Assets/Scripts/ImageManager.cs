@@ -9,6 +9,7 @@ using UnityEngine;
 public class ImageManager : MonoBehaviour
 {
     public Transform ImageSquare;
+    public ColorState ColorState;
 
     public int ImageWidth = 128;
     public int ImageHeight = 128;
@@ -50,6 +51,7 @@ public class ImageManager : MonoBehaviour
 
                 var square = obj.GetComponent<ImageSquare>();
                 square.Index = 4 * i + j;
+                square.ColorState = ColorState;
                 _squares.Add(square);
 
                 posX += ImageXOffset;
@@ -74,18 +76,10 @@ public class ImageManager : MonoBehaviour
                 appliedTexture.SetPixels(colorBlock);
                 appliedTexture.Apply();
                 square.Texture = appliedTexture;
-
-//                var averageR = colorBlock.Average(x => x.r);
-//                var averageG = colorBlock.Average(x => x.g);
-//                var averageB = colorBlock.Average(x => x.b);
-//                Debug.Log("R = " + averageR + " G = " + averageG + " B = " + averageB);              
-//                square.ForegroundColor = new Color(averageR, averageG, averageB);
-//                square.UpdateForgroundColor();
             }
         }
     }
 
-    // TODO Put pixels in right order
     public void ReceiveColors(ColorBoxMessage boxes)
     {
         Debug.Log("Boxes size " + boxes.cubes.Count);
@@ -101,7 +95,7 @@ public class ImageManager : MonoBehaviour
 
     public void ApplyColor(Color color, int index)
     {
-        _squares[index].ApplyReceivedColor(color);
+        _squares.Find(x => x.Index == index).ApplyReceivedColor(color);
     }
 
     public void SetForegroundColors()

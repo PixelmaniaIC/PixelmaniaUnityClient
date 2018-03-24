@@ -5,7 +5,7 @@ namespace Assets.GameObjects
 {
     public class ColorReceiver : MonoBehaviour, IReceivable
     {
-        public ColorState colorState;
+        public ImageManager ImageManager;
 
         public string NetworkName
         {
@@ -15,8 +15,8 @@ namespace Assets.GameObjects
         public void ReceiveMessage(Message message)
         {
             var parsedMessage = ColorUpdateMessage.Build(message.payload);
-            Color selectedColor = new Color(parsedMessage.r, parsedMessage.g, parsedMessage.b);
-            colorState.ColorUpdate(selectedColor);
+            var selectedColor = new Color32((byte)parsedMessage.r, (byte)parsedMessage.g, (byte)parsedMessage.b, 255);
+            ImageManager.ApplyColor(selectedColor, parsedMessage.index);
         }
     }
 }

@@ -3,12 +3,13 @@ using UnityEngine;
 
 namespace Assets
 {
-    public class ImageSquare : MonoBehaviour, IReceivable
+    public class ImageSquare : MonoBehaviour
     {
         public int Index;
         public Texture2D Texture;
         public Color ForegroundColor;
-
+        public ColorState ColorState;
+        
         public int Width = 128;
         public int Height = 128;
         
@@ -17,18 +18,24 @@ namespace Assets
 
         private void Awake()
         {
+            Application.runInBackground = true;
             _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             var initTexture = new Texture2D(Width, Height);
             _spriteRenderer.sprite = Sprite.Create(initTexture, new Rect(0, 0, Width, Height), new Vector2(0.5f, 0.5f));
         }
 
         private void OnMouseDown()
-        {
-            _spriteRenderer.sprite = Sprite.Create(Texture, new Rect(0, 0, Width, Height),
-                new Vector2(0.5f, 0.5f));
-            
+        {   
             // TODO REMOVE THIS SHIT
-            ApplyReceivedColor(Color.gray);
+//            ApplyReceivedColor(ColorState.CurrentColor);
+            SendColorsToServer();
+        }
+
+        public void SendColorsToServer()
+        {
+            var payload = new SquarePayload(ColorState.CurrentColor, Index);
+            var msg = new Message(PlayerId.instance.id, "ColorChanger", payload.ToString());
+            TcpUnityClient.instance.SendServerMessage(msg);
         }
 
         public void UpdateForgroundColor()
@@ -48,6 +55,9 @@ namespace Assets
 
         public void ApplyReceivedColor(Color color)
         {
+            _spriteRenderer.sprite = Sprite.Create(Texture, new Rect(0, 0, Width, Height),
+                new Vector2(0.5f, 0.5f));
+            
             var r = ForegroundColor.r - color.r;
             var g = ForegroundColor.g - color.g;
             var b = ForegroundColor.b - color.b;
@@ -61,18 +71,8 @@ namespace Assets
                     Texture.SetPixel(i, j, updatedColor);
                 }
             }
-            
+            Debug.Log("Error = " + (r + g + b));
             Texture.Apply();
-        }
-
-        public string NetworkName
-        {
-            get { return "ImageManager"; }
-        }
-
-        public void ReceiveMessage(Message message)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

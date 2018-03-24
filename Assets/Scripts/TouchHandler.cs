@@ -24,17 +24,7 @@ public class TouchHandler : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved))
 		{
 			Color selectedColor = _colorChanger.color;
-			_colorState.ColorUpdate(selectedColor);
-
-            var payload = new ColorUpdateMessage(selectedColor);
-            var payloadJson = JsonUtility.ToJson(payload);
-
-            var message = new Message(PlayerId.instance.id, "ColorChanger", payloadJson);
-
-
-            _client.SendServerMessage (message);
-
-            Debug.Log ("Color selected " + selectedColor);
+			_colorState.ColorUpdate(selectedColor);	
 		}
 	}
 	
