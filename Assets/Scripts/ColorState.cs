@@ -10,7 +10,7 @@ public class ColorState : MonoBehaviour {
 	void Start () {
         _render = gameObject.GetComponent<Renderer>();
 
-        // TODO: what a fuck?
+        // TODO: what the fuck?
         _render.material.color = Color.blue;
 	}
 

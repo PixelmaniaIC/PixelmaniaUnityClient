@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters;
 using Assets;
 using UnityEngine;
+using UnityEngine.UI;
 
 // TODO: why this name?
 public class RandomColorChanger : MonoBehaviour {
@@ -10,20 +11,21 @@ public class RandomColorChanger : MonoBehaviour {
 	// Use this for initialization
 
 	public Color color;
-    private Renderer _render;
+    private Image picture;
 
 	void Start () {
-		this.color = Color.green;
-        _render = GetComponent<Renderer>();
+		color = Color.green;
+        picture = GetComponent<Image>();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		Debug.Log("Received color " + color);
+        //Debug.Log("Received color " + color);
 
         // TODO: optimize this!
-		color = this.gameObject.transform.parent.GetComponent<CameraAccess>().Color;
-        _render.material.color = color;
+        // TODO: sorry for my parents
+        color = gameObject.transform.parent.parent.parent.GetComponent<CameraAccess>().Color;
+        picture.color = color;
 	}
 }

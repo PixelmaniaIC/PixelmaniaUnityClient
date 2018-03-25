@@ -16,7 +16,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 {
     #region PRIVATE_MEMBER_VARIABLES
 
+    public Transform notificationPanel;
+    public Transform gamePanel;
+    public GameObject cube;
+
     protected TrackableBehaviour mTrackableBehaviour;
+
+    private bool firstTime;
 
     #endregion // PRIVATE_MEMBER_VARIABLES
 
@@ -27,6 +33,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
+
+        firstTime = true;
     }
 
     #endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -84,6 +92,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+        notificationPanel.gameObject.SetActive(false);
+        gamePanel.gameObject.SetActive(true);
+        cube.SetActive(true);
     }
 
 
@@ -104,6 +116,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+
+        if (firstTime)
+        {
+            notificationPanel.gameObject.SetActive(true);
+            gamePanel.gameObject.SetActive(false);
+            cube.SetActive(false);
+            firstTime = false;
+        }
     }
 
     #endregion // PRIVATE_METHODS
