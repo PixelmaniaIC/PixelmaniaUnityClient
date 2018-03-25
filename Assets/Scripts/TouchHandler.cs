@@ -11,12 +11,14 @@ public class TouchHandler : MonoBehaviour
     private TcpUnityClient _client;
     private ColorState _colorState;
     private RandomColorChanger _colorChanger;
+    private Animator _animatior;
 
     void Start()
     {
         _client = TcpUnityClient.instance;
         _colorState = colorState.GetComponent<ColorState>();
         _colorChanger = colorPicker.GetComponent<RandomColorChanger>();
+        _animatior = colorState.GetComponent<Animator>();
     }
 
     void Update()
@@ -30,14 +32,14 @@ public class TouchHandler : MonoBehaviour
 
             Color selectedColor = _colorChanger.color;
             _colorState.ColorUpdate(selectedColor);
-
+            // TODO optimize
             _colorState.GetComponent<MeshRenderer>().enabled = true;
 
-            var payload = new ColorUpdateMessage(selectedColor);
-            var payloadJson = JsonUtility.ToJson(payload);
-
-            var message = new Message(PlayerId.instance.id, "ColorChanger", payloadJson);
-            _client.SendServerMessage(message);
+//            var payload = new ColorUpdateMessage(selectedColor);
+//            var payloadJson = JsonUtility.ToJson(payload);
+//
+//            var message = new Message(PlayerId.instance.id, "ColorChanger", payloadJson);
+//            _client.SendServerMessage(message);
 
             Debug.Log("Color selected " + selectedColor);
         }

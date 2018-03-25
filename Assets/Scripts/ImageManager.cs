@@ -29,7 +29,6 @@ public class ImageManager : MonoBehaviour
         using (var www = new WWW(url))
         {
             yield return www;
-
             SetTexture(www.texture);
         }
     }
@@ -68,6 +67,7 @@ public class ImageManager : MonoBehaviour
             for (var j = 0; j < 4; j++)
             {
                 var squareNum = (12 + j) - i * 4;
+                Debug.Log(squareNum);
                 var square = _squares[squareNum];
 
                 var colorBlock = texture.GetPixels(ImageWidth * j, ImageHeight * i, ImageWidth, ImageHeight);
