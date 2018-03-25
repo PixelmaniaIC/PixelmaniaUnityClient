@@ -26,7 +26,7 @@ public class ImageManager : MonoBehaviour
 
     IEnumerator DownloadImage(string url)
     {
-        using (WWW www = new WWW(url))
+        using (var www = new WWW(url))
         {
             yield return www;
 
@@ -82,7 +82,6 @@ public class ImageManager : MonoBehaviour
 
     public void ReceiveColors(ColorBoxMessage boxes)
     {
-        Debug.Log("Boxes size " + boxes.cubes.Count);
         for (var i = 0; i < 16; i++)
         {
             var square = _squares.Find(x => x.Index == i);
@@ -98,8 +97,4 @@ public class ImageManager : MonoBehaviour
         _squares.Find(x => x.Index == index).ApplyReceivedColor(color);
     }
 
-    public void SetForegroundColors()
-    {
-        _squares[1].UpdateForgroundColor();
-    }
 }

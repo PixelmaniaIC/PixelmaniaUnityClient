@@ -81,6 +81,7 @@ MonoBehaviour:
   Index: 0
   Texture: {fileID: 0}
   ForegroundColor: {r: 0, g: 0, b: 0, a: 0}
+  ColorState: {fileID: 0}
   Width: 128
   Height: 128
 --- !u!212 &212146353918146660

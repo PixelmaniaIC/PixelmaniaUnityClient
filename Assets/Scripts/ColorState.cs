@@ -9,7 +9,6 @@ public class ColorState : MonoBehaviour {
 	
 	void Start () {
         _render = gameObject.GetComponent<Renderer>();
-
 		// Init state of Color state
 		CurrentColor = Color.blue;
         _render.material.color = Color.blue;
