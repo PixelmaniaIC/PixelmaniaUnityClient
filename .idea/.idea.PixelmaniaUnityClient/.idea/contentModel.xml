@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Artur\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PixelmaniaUnityClient.959532689.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Artur\Desktop\PixelmaniaUnityClient" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="Vuforia" t="Include">
+            <e p="CylinderTargetTextures" t="Include">
+              <e p="VuforiaMars_Images" t="Include">
+                <e p="authoringinfo.xml" t="Include" />
+              </e>
+            </e>
+            <e p="Emulator" t="Include">
+              <e p="VuforiaEmulator.xml" t="Include" />
+            </e>
+            <e p="ForPrint" t="Include">
+              <e p="ModelTarget" t="Include">
+                <e p="readme_3dprint.txt" t="Include" />
+              </e>
+            </e>
+            <e p="TargetsetData" t="Include">
+              <e p="VuforiaMars_Object_info.xml" t="Include" />
+            </e>
+            <e p="VuforiaMars_ModelTarget" t="Include">
+              <e p="authoringinfo.xml" t="Include" />
+            </e>
+            <e p="VuforiaMars_VuMark" t="Include">
+              <e p="authoringinfo.xml" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PromptScript.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="CameraAccess.cs" t="Include" />
+          <e p="ColorChanger.cs" t="Include" />
+          <e p="ColorState.cs" t="Include" />
+          <e p="Cube.cs" t="Include" />
+          <e p="ExitConfirmation.cs" t="Include" />
+          <e p="GameManag.cs" t="Include" />
+          <e p="ImageHandler.cs" t="Include" />
+          <e p="ImageManager.cs" t="Include" />
+          <e p="ImageSquare.cs" t="Include" />
+          <e p="Interfaces" t="Include">
+            <e p="IdReceiveListener.cs" t="Include" />
+            <e p="IReceivable.cs" t="Include" />
+          </e>
+          <e p="Leaderboard" t="Include">
+            <e p="Leaderboard.cs" t="Include" />
+            <e p="User.cs" t="Include" />
+          </e>
+          <e p="Messages" t="Include">
+            <e p="ColorBoxMessage.cs" t="Include" />
+            <e p="ColorUpdateMessage.cs" t="Include" />
+            <e p="ImagePayload.cs" t="Include" />
+            <e p="LeaderboardMessage.cs" t="Include" />
+            <e p="Message.cs" t="Include" />
+            <e p="ReceiveManager.cs" t="Include" />
+            <e p="SingleColor.cs" t="Include" />
+            <e p="SquarePayload.cs" t="Include" />
+            <e p="UrlMessage.cs" t="Include" />
+          </e>
+          <e p="Network" t="Include">
+            <e p="PlayerId.cs" t="Include" />
+            <e p="SendMessage.cs" t="Include" />
+            <e p="TcpUnityClient.cs" t="Include" />
+          </e>
+          <e p="RandomColorChanger.cs" t="Include" />
+          <e p="Receivables" t="Include">
+            <e p="ColorReceiver.cs" t="Include" />
+            <e p="ImageInitializer.cs" t="Include" />
+            <e p="ImageReceiver.cs" t="Include" />
+            <e p="PlayerIdProcessor.cs" t="Include" />
+            <e p="UrlReceiver.cs" t="Include" />
+            <e p="UserInserter.cs" t="Include" />
+            <e p="UserRemover.cs" t="Include" />
+            <e p="UserScoreUpdater.cs" t="Include" />
+            <e p="UsersInitializer.cs" t="Include" />
+          </e>
+          <e p="Sender" t="Include">
+            <e p="NameSetter.cs" t="Include" />
+          </e>
+          <e p="StartMenu.cs" t="Include" />
+          <e p="TouchHandler.cs" t="Include" />
+        </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="Vuforia" t="Include">
+            <e p="VuforiaMars_Images.xml" t="Include" />
+            <e p="VuforiaMars_ModelTarget.xml" t="Include" />
+            <e p="VuforiaMars_Object_OT.xml" t="Include" />
+            <e p="VuforiaMars_VuMark.xml" t="Include" />
+          </e>
+        </e>
+        <e p="Vuforia" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="OpenSourceInitializer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="DefaultInitializationErrorHandler.cs" t="Include" />
+            <e p="DefaultTrackableEventHandler.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="BrightTexture.shader" t="Include" />
+            <e p="CameraDiffuse.shader" t="Include" />
+            <e p="ColoredLines.shader" t="Include" />
+            <e p="DepthContour.shader" t="Include" />
+            <e p="DepthMask.shader" t="Include" />
+            <e p="OutlineOpaque.shader" t="Include" />
+            <e p="Text3D.shader" t="Include" />
+            <e p="VertexLitWithZ.shader" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="PixelmaniaUnityClient.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

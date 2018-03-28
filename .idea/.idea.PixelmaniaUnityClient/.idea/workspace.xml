@@ -1,10 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10a815dd-67f8-4571-bc44-2b23f19f6831" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/main.unity" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Assets/main.unity.meta" afterPath="" />
+    <list default="true" id="10a815dd-67f8-4571-bc44-2b23f19f6831" name="Default" comment="Merge remote-tracking branch 'origin/leaderboard'&#10;&#10;# Conflicts:&#10;#&#9;Assets/Prefabs/Prompt.prefab.meta&#10;#&#9;Assets/Scenes/main.unity&#10;#&#9;Assets/Scripts/Leaderboard.meta&#10;#&#9;Assets/main.unity.meta">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/contentModel.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/indexLayout.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/riderModule.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IdReceiveListener.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Interfaces/IdReceiveListener.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Leaderboard.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Leaderboard/Leaderboard.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Leaderboard/Leaderboard.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Leaderboard/User.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Leaderboard/User.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Messages/LeaderboardMessage.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Messages/LeaderboardMessage.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UserInserter.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UserInserter.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UserRemover.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UserRemover.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UserScoreUpdater.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UserScoreUpdater.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UsersInitializer.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/UsersInitializer.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Sender.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Sender/NameSetter.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Sender/NameSetter.cs.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/UnityPlayer.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text.exe" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/Assembly-CSharp.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/Mono.Security.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/System.Core.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/System.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AIModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AIModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ARModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ARModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AccessibilityModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AccessibilityModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AnimationModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AnimationModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AssetBundleModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AssetBundleModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AudioModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.AudioModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ClothModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ClothModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ClusterInputModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ClusterInputModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ClusterRendererModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ClusterRendererModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.CoreModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.CoreModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.CrashReportingModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.CrashReportingModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.DirectorModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.DirectorModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.GameCenterModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.GameCenterModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.GridModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.GridModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.IMGUIModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.IMGUIModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ImageConversionModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ImageConversionModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.InputModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.InputModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.JSONSerializeModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.JSONSerializeModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.Networking.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ParticleSystemModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ParticleSystemModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ParticlesLegacyModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ParticlesLegacyModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.PerformanceReportingModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.PerformanceReportingModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.Physics2DModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.Physics2DModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.PhysicsModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.PhysicsModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ScreenCaptureModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.ScreenCaptureModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.SharedInternalsModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.SharedInternalsModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.SpatialTracking.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.SpriteMaskModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.SpriteMaskModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.SpriteShapeModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.SpriteShapeModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.StandardEvents.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.StyleSheetsModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.StyleSheetsModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TerrainModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TerrainModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TerrainPhysicsModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TextRenderingModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TextRenderingModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TilemapModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.TilemapModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.Timeline.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UI.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UIElementsModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UIElementsModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UIModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UIModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UNETModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UNETModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityAnalyticsModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityConnectModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityConnectModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestAudioModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestTextureModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.UnityWebRequestWWWModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.VRModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.VRModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.VehiclesModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.VehiclesModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.VideoModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.VideoModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.WebModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.WebModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.WindModule.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.WindModule.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/UnityEngine.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/Vuforia.UnityExtensions.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Managed/mscorlib.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/EmbedRuntime/MonoPosixHelper.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/EmbedRuntime/mono.dll" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/1.0/machine.config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/2.0/Browsers/Compat.browser" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/2.0/machine.config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/2.0/settings.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/2.0/web.config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/browscap.ini" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Mono/etc/mono/mconfig/config.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Resources/unity default resources" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/Resources/unity_builtin_extra" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_Images.dat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_Images.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_ModelTarget.dat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_ModelTarget.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_Object_OT.dat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_Object_OT.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_VuMark.dat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/StreamingAssets/Vuforia/VuforiaMars_VuMark.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/app.info" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/boot.config" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/globalgamemanagers" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/globalgamemanagers.assets" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/level0" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/resources.assets" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/sharedassets0.assets" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/text_Data/sharedassets0.assets.resS" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/VuforiaMars_ModelTarget/ddcf29fe83b64ee984697b36afc5e823/Model.prefab" afterPath="$PROJECT_DIR$/Assets/Models/VuforiaMars_ModelTarget/ddcf29fe83b64ee984697b36afc5e823/Model.prefab" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start Menu.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/Start Menu.unity" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManag.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManag.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/PlayerId.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Network/PlayerId.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Receivables/PlayerIdProcessor.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Receivables/PlayerIdProcessor.cs" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartMenu.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/StartMenu.cs" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" />
+      <change beforePath="$PROJECT_DIR$/QCAR/somedata16" afterPath="$PROJECT_DIR$/QCAR/somedata16" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +184,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TouchHandler.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TouchHandler.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TouchHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="156">
+              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="38" />
               <folding>
                 <marker date="1522089647797" expanded="false" signature="6:135" ph="..." />
                 <marker date="1522089647797" expanded="true" signature="178:1700" ph="{...}" />
@@ -34,45 +203,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraAccess.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraAccess.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding>
-                <marker date="1522088107681" expanded="false" signature="6:57" ph="..." />
-                <marker date="1522088107681" expanded="true" signature="107:1881" ph="{...}" />
-                <marker date="1522088107681" expanded="true" signature="114:231" ph="/* Gets color of center pixel of main Camera ... */" />
-                <marker date="1522088107681" expanded="true" signature="277:1879" ph="{...}" />
-                <marker date="1522088107681" expanded="true" signature="745:1068" ph="{...}" />
-                <marker date="1522088107681" expanded="true" signature="1078:1152" ph="/* Updates are fixed due to minimazing loss of fps ... */" />
-                <marker date="1522088107681" expanded="true" signature="1187:1873" ph="{...}" />
-                <marker date="1522088107681" expanded="true" signature="1237:1521" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RandomColorChanger.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RandomColorChanger.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <marker date="1522043803728" expanded="false" signature="6:161" ph="..." />
-                <marker date="1522043803728" expanded="true" signature="235:909" ph="{...}" />
-                <marker date="1522043803728" expanded="true" signature="373:531" ph="{...}" />
-                <marker date="1522043803728" expanded="true" signature="585:907" ph="{...}" />
-                <marker date="1522043803728" expanded="true" signature="597:707" ph="/* Debug.Log(&quot;Received color &quot; + color); ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ImageSquare.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageSquare.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
+            <state relative-caret-position="1446">
               <caret line="142" column="17" lean-forward="false" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
               <folding>
                 <marker date="1522253084953" expanded="false" signature="6:89" ph="..." />
@@ -103,56 +237,131 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PromptScript.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/PromptScript.cs">
+      <file leaf-file-name="GameManag.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManag.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1522252391264" expanded="true" signature="6:78" ph="..." />
-                <marker date="1522252391264" expanded="true" signature="122:1294" ph="{...}" />
-                <marker date="1522252391264" expanded="true" signature="359:428" ph="{...}" />
-                <marker date="1522252391264" expanded="true" signature="455:833" ph="{...}" />
-                <marker date="1522252391264" expanded="true" signature="543:646" ph="{...}" />
-                <marker date="1522252391264" expanded="true" signature="583:642" ph="{...}" />
-                <marker date="1522252391264" expanded="true" signature="887:1292" ph="{...}" />
-                <marker date="1522252391264" expanded="true" signature="955:1211" ph="{...}" />
-                <marker date="1522252391264" expanded="true" signature="1257:1289" ph="{...}" />
+                <marker date="1522257008006" expanded="false" signature="6:78" ph="..." />
+                <marker date="1522257008006" expanded="true" signature="119:455" ph="{...}" />
+                <marker date="1522257008006" expanded="true" signature="258:453" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PromptScript.cs.meta" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/PromptScript.cs.meta">
+      <file leaf-file-name="CameraAccess.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraAccess.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="261">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <marker date="1522088107681" expanded="false" signature="6:57" ph="..." />
+                <marker date="1522088107681" expanded="true" signature="107:1881" ph="{...}" />
+                <marker date="1522088107681" expanded="true" signature="114:231" ph="/* Gets color of center pixel of main Camera ... */" />
+                <marker date="1522088107681" expanded="true" signature="277:1879" ph="{...}" />
+                <marker date="1522088107681" expanded="true" signature="745:1068" ph="{...}" />
+                <marker date="1522088107681" expanded="true" signature="1078:1152" ph="/* Updates are fixed due to minimazing loss of fps ... */" />
+                <marker date="1522088107681" expanded="true" signature="1187:1873" ph="{...}" />
+                <marker date="1522088107681" expanded="true" signature="1237:1521" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TcpUnityClient.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/TcpUnityClient.cs">
+      <file leaf-file-name="StartMenu.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/StartMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1522256622853" expanded="false" signature="6:151" ph="..." />
-                <marker date="1522256622853" expanded="true" signature="196:2334" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="389:589" ph="NetworkEntities" />
-                <marker date="1522256622853" expanded="true" signature="619:873" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="900:1103" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="987:1097" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="1141:1176" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="1208:1660" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="1226:1556" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="1584:1654" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="1716:1853" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="1896:2004" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="2037:2197" ph="{...}" />
-                <marker date="1522256622853" expanded="true" signature="2229:2331" ph="{...}" />
+                <marker date="1522257008245" expanded="false" signature="6:135" ph="..." />
+                <marker date="1522257008245" expanded="true" signature="176:781" ph="{...}" />
+                <marker date="1522257008245" expanded="true" signature="282:383" ph="{...}" />
+                <marker date="1522257008245" expanded="true" signature="313:377" ph="{...}" />
+                <marker date="1522257008245" expanded="true" signature="426:666" ph="{...}" />
+                <marker date="1522257008245" expanded="true" signature="502:575" ph="{...}" />
+                <marker date="1522257008245" expanded="true" signature="739:779" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserScoreUpdater.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserScoreUpdater.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1522257008181" expanded="false" signature="6:108" ph="..." />
+                <marker date="1522257008181" expanded="true" signature="168:432" ph="{...}" />
+                <marker date="1522257008181" expanded="true" signature="237:288" ph="{...}" />
+                <marker date="1522257008181" expanded="true" signature="337:430" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRemover.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserRemover.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1522257008161" expanded="false" signature="6:94" ph="..." />
+                <marker date="1522257008161" expanded="true" signature="149:421" ph="{...}" />
+                <marker date="1522257008161" expanded="true" signature="218:268" ph="{...}" />
+                <marker date="1522257008161" expanded="true" signature="317:419" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInserter.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserInserter.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1522257008144" expanded="false" signature="6:94" ph="..." />
+                <marker date="1522257008144" expanded="true" signature="151:488" ph="{...}" />
+                <marker date="1522257008144" expanded="true" signature="219:270" ph="{...}" />
+                <marker date="1522257008144" expanded="true" signature="352:486" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerIdProcessor.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/PlayerIdProcessor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <marker date="1522257277058" expanded="true" signature="6:68" ph="..." />
+                <marker date="1522257277058" expanded="true" signature="98:575" ph="{...}" />
+                <marker date="1522257277058" expanded="true" signature="164:573" ph="{...}" />
+                <marker date="1522257277058" expanded="true" signature="255:323" ph="{...}" />
+                <marker date="1522257277058" expanded="true" signature="376:567" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerId.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/PlayerId.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <marker date="1522257008114" expanded="false" signature="6:78" ph="..." />
+                <marker date="1522257008114" expanded="true" signature="117:815" ph="{...}" />
+                <marker date="1522257008114" expanded="true" signature="258:631" ph="{...}" />
+                <marker date="1522257008114" expanded="true" signature="304:625" ph="{...}" />
+                <marker date="1522257008114" expanded="true" signature="343:473" ph="{...}" />
+                <marker date="1522257008114" expanded="true" signature="478:615" ph="{...}" />
+                <marker date="1522257008114" expanded="true" signature="658:813" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -174,6 +383,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IdReceiveListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Vuforia/Editor/Scripts/OpenSourceInitializer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ImageManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -193,6 +403,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/SendMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/PlayerId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/TcpUnityClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Messages/ReceiveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Vuforia/Shaders/OutlineOpaque.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Messages/ColorUpdateMessage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -201,7 +412,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/PlayerIdProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/ColorReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7BFA4FF1-8C2F-4128-8D73-7985193A8490/b8/01119e42/ImageTargetBehaviour.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserScoreUpdater.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73F4CCE3-51A9-454B-85BA-2899CA601133/12/d0fea912/MonoBehaviour.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserInserter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserRemover.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -227,6 +441,7 @@
         <option value="$PROJECT_DIR$/Assets/PromptScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ImageSquare.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Network/TcpUnityClient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Receivables/PlayerIdProcessor.cs" />
       </list>
     </option>
   </component>
@@ -282,22 +497,6 @@
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="PixelmaniaUnityClient (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Network" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="PixelmaniaUnityClient (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Receivables" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -309,7 +508,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="ImageTargetBe&#9;null&#9;null&#10;tcpuni&#9;FILE&#9;file://C:/Users/Artur/Desktop/PixelmaniaUnityClient/Assets/Scripts/Network/TcpUnityClient.cs" />
+    <property name="SearchEverywhereHistoryKey" value="IdRec&#9;FILE&#9;file://C:/Users/Artur/Desktop/PixelmaniaUnityClient/Assets/Scripts/Interfaces/IdReceiveListener.cs&#10;ImageTargetBe&#9;null&#9;null&#10;tcpuni&#9;FILE&#9;file://C:/Users/Artur/Desktop/PixelmaniaUnityClient/Assets/Scripts/Network/TcpUnityClient.cs" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -343,7 +542,7 @@
       <workItem from="1521712567012" duration="23362000" />
       <workItem from="1521791271218" duration="22338000" />
       <workItem from="1522164404158" duration="2095000" />
-      <workItem from="1522244318183" duration="8235000" />
+      <workItem from="1522244318183" duration="9089000" />
     </task>
     <task id="LOCAL-00001" summary="Add image squares with texture slicing">
       <created>1521794812361</created>
@@ -387,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522256643642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Delete main unity">
+      <created>1522256797146</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522256797146</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78196000" />
+    <option name="totallyTimeSpent" value="79050000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -409,13 +615,13 @@
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21077655" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31537244" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1852123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -444,93 +650,14 @@
     <MESSAGE value="Add UrlReceiver&#10;Update ImageManager" />
     <MESSAGE value="Before merge with feature" />
     <MESSAGE value="Add color prompt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add color prompt" />
+    <MESSAGE value="Delete main unity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete main unity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ColorChanger.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraAccess.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <marker date="1522088107681" expanded="false" signature="6:57" ph="..." />
-            <marker date="1522088107681" expanded="true" signature="107:1881" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="114:231" ph="/* Gets color of center pixel of main Camera ... */" />
-            <marker date="1522088107681" expanded="true" signature="277:1879" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="745:1068" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="1078:1152" ph="/* Updates are fixed due to minimazing loss of fps ... */" />
-            <marker date="1522088107681" expanded="true" signature="1187:1873" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="1237:1521" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageSquare.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-339">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <marker date="1522253084953" expanded="false" signature="6:89" ph="..." />
-            <marker date="1522253084953" expanded="true" signature="107:5207" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="154:5205" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="815:1276" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="1327:1390" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="1429:2022" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="1558:1763" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="1641:1749" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="1831:2012" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="2058:2455" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="2483:2943" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="2532:2933" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="2732:2822" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="2843:2919" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="2985:3235" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="3279:3862" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="3397:3583" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="3460:3569" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="3904:4380" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="3941:4370" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="4441:5199" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="4706:5093" ph="{...}" />
-            <marker date="1522253084953" expanded="true" signature="4769:5079" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TouchHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <marker date="1522089647797" expanded="false" signature="6:135" ph="..." />
-            <marker date="1522089647797" expanded="true" signature="178:1700" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="445:733" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="752:1698" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="872:1692" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="1089:1187" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="1204:1682" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="1288:1377" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageSquare.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -733,20 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManag.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/PlayerId.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Messages/ReceiveManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -780,13 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/PlayerIdProcessor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -918,23 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TouchHandler.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <marker date="1522089647797" expanded="false" signature="6:135" ph="..." />
-            <marker date="1522089647797" expanded="true" signature="178:1700" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="445:733" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="752:1698" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="872:1692" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="1089:1187" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="1204:1682" ph="{...}" />
-            <marker date="1522089647797" expanded="true" signature="1288:1377" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RandomColorChanger.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -949,26 +1038,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraAccess.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/PromptScript.cs.meta">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IdReceiveListener.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/TcpUnityClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
-            <marker date="1522088107681" expanded="false" signature="6:57" ph="..." />
-            <marker date="1522088107681" expanded="true" signature="107:1881" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="114:231" ph="/* Gets color of center pixel of main Camera ... */" />
-            <marker date="1522088107681" expanded="true" signature="277:1879" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="745:1068" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="1078:1152" ph="/* Updates are fixed due to minimazing loss of fps ... */" />
-            <marker date="1522088107681" expanded="true" signature="1187:1873" ph="{...}" />
-            <marker date="1522088107681" expanded="true" signature="1237:1521" ph="{...}" />
+            <marker date="1522256622853" expanded="false" signature="6:151" ph="..." />
+            <marker date="1522256622853" expanded="true" signature="196:2334" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="389:589" ph="NetworkEntities" />
+            <marker date="1522256622853" expanded="true" signature="619:873" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="900:1103" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="987:1097" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="1141:1176" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="1208:1660" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="1226:1556" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="1584:1654" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="1716:1853" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="1896:2004" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="2037:2197" ph="{...}" />
+            <marker date="1522256622853" expanded="true" signature="2229:2331" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/PromptScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <marker date="1522252391264" expanded="false" signature="6:78" ph="..." />
+            <marker date="1522252391264" expanded="true" signature="122:1294" ph="{...}" />
+            <marker date="1522252391264" expanded="true" signature="359:428" ph="{...}" />
+            <marker date="1522252391264" expanded="true" signature="455:833" ph="{...}" />
+            <marker date="1522252391264" expanded="true" signature="543:646" ph="{...}" />
+            <marker date="1522252391264" expanded="true" signature="583:642" ph="{...}" />
+            <marker date="1522252391264" expanded="true" signature="887:1292" ph="{...}" />
+            <marker date="1522252391264" expanded="true" signature="955:1211" ph="{...}" />
+            <marker date="1522252391264" expanded="true" signature="1257:1289" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ImageSquare.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
+        <state relative-caret-position="1446">
           <caret line="142" column="17" lean-forward="false" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
           <folding>
             <marker date="1522253084953" expanded="false" signature="6:89" ph="..." />
@@ -998,51 +1127,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/PromptScript.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManag.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522252391264" expanded="true" signature="6:78" ph="..." />
-            <marker date="1522252391264" expanded="true" signature="122:1294" ph="{...}" />
-            <marker date="1522252391264" expanded="true" signature="359:428" ph="{...}" />
-            <marker date="1522252391264" expanded="true" signature="455:833" ph="{...}" />
-            <marker date="1522252391264" expanded="true" signature="543:646" ph="{...}" />
-            <marker date="1522252391264" expanded="true" signature="583:642" ph="{...}" />
-            <marker date="1522252391264" expanded="true" signature="887:1292" ph="{...}" />
-            <marker date="1522252391264" expanded="true" signature="955:1211" ph="{...}" />
-            <marker date="1522252391264" expanded="true" signature="1257:1289" ph="{...}" />
+            <marker date="1522257008006" expanded="false" signature="6:78" ph="..." />
+            <marker date="1522257008006" expanded="true" signature="119:455" ph="{...}" />
+            <marker date="1522257008006" expanded="true" signature="258:453" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/PromptScript.cs.meta">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StartMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1522257008245" expanded="false" signature="6:135" ph="..." />
+            <marker date="1522257008245" expanded="true" signature="176:781" ph="{...}" />
+            <marker date="1522257008245" expanded="true" signature="282:383" ph="{...}" />
+            <marker date="1522257008245" expanded="true" signature="313:377" ph="{...}" />
+            <marker date="1522257008245" expanded="true" signature="426:666" ph="{...}" />
+            <marker date="1522257008245" expanded="true" signature="502:575" ph="{...}" />
+            <marker date="1522257008245" expanded="true" signature="739:779" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/TcpUnityClient.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserScoreUpdater.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522256622853" expanded="false" signature="6:151" ph="..." />
-            <marker date="1522256622853" expanded="true" signature="196:2334" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="389:589" ph="NetworkEntities" />
-            <marker date="1522256622853" expanded="true" signature="619:873" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="900:1103" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="987:1097" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="1141:1176" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="1208:1660" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="1226:1556" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="1584:1654" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="1716:1853" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="1896:2004" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="2037:2197" ph="{...}" />
-            <marker date="1522256622853" expanded="true" signature="2229:2331" ph="{...}" />
+            <marker date="1522257008181" expanded="false" signature="6:108" ph="..." />
+            <marker date="1522257008181" expanded="true" signature="168:432" ph="{...}" />
+            <marker date="1522257008181" expanded="true" signature="237:288" ph="{...}" />
+            <marker date="1522257008181" expanded="true" signature="337:430" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserRemover.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522257008161" expanded="false" signature="6:94" ph="..." />
+            <marker date="1522257008161" expanded="true" signature="149:421" ph="{...}" />
+            <marker date="1522257008161" expanded="true" signature="218:268" ph="{...}" />
+            <marker date="1522257008161" expanded="true" signature="317:419" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/UserInserter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522257008144" expanded="false" signature="6:94" ph="..." />
+            <marker date="1522257008144" expanded="true" signature="151:488" ph="{...}" />
+            <marker date="1522257008144" expanded="true" signature="219:270" ph="{...}" />
+            <marker date="1522257008144" expanded="true" signature="352:486" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Receivables/PlayerIdProcessor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <marker date="1522257277058" expanded="true" signature="6:68" ph="..." />
+            <marker date="1522257277058" expanded="true" signature="98:575" ph="{...}" />
+            <marker date="1522257277058" expanded="true" signature="164:573" ph="{...}" />
+            <marker date="1522257277058" expanded="true" signature="255:323" ph="{...}" />
+            <marker date="1522257277058" expanded="true" signature="376:567" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Network/PlayerId.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1522257008114" expanded="false" signature="6:78" ph="..." />
+            <marker date="1522257008114" expanded="true" signature="117:815" ph="{...}" />
+            <marker date="1522257008114" expanded="true" signature="258:631" ph="{...}" />
+            <marker date="1522257008114" expanded="true" signature="304:625" ph="{...}" />
+            <marker date="1522257008114" expanded="true" signature="343:473" ph="{...}" />
+            <marker date="1522257008114" expanded="true" signature="478:615" ph="{...}" />
+            <marker date="1522257008114" expanded="true" signature="658:813" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraAccess.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <marker date="1522088107681" expanded="false" signature="6:57" ph="..." />
+            <marker date="1522088107681" expanded="true" signature="107:1881" ph="{...}" />
+            <marker date="1522088107681" expanded="true" signature="114:231" ph="/* Gets color of center pixel of main Camera ... */" />
+            <marker date="1522088107681" expanded="true" signature="277:1879" ph="{...}" />
+            <marker date="1522088107681" expanded="true" signature="745:1068" ph="{...}" />
+            <marker date="1522088107681" expanded="true" signature="1078:1152" ph="/* Updates are fixed due to minimazing loss of fps ... */" />
+            <marker date="1522088107681" expanded="true" signature="1187:1873" ph="{...}" />
+            <marker date="1522088107681" expanded="true" signature="1237:1521" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TouchHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <marker date="1522089647797" expanded="false" signature="6:135" ph="..." />
+            <marker date="1522089647797" expanded="true" signature="178:1700" ph="{...}" />
+            <marker date="1522089647797" expanded="true" signature="445:733" ph="{...}" />
+            <marker date="1522089647797" expanded="true" signature="752:1698" ph="{...}" />
+            <marker date="1522089647797" expanded="true" signature="872:1692" ph="{...}" />
+            <marker date="1522089647797" expanded="true" signature="1089:1187" ph="{...}" />
+            <marker date="1522089647797" expanded="true" signature="1204:1682" ph="{...}" />
+            <marker date="1522089647797" expanded="true" signature="1288:1377" ph="{...}" />
           </folding>
         </state>
       </provider>
