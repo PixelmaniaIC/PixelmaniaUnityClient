@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10a815dd-67f8-4571-bc44-2b23f19f6831" name="Default" comment="Add">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prompt.prefab" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/Prompt.prefab.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/PromptScript.cs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/PromptScript.cs.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/UI Elements/PictureFrame.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Assets/UI Elements/PictureFrame.png.meta" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ImageSquare.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/ImageSquare.prefab" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraAccess.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraAccess.cs" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ImageManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ImageManager.cs" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ImageSquare.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ImageSquare.cs" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Network/TcpUnityClient.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Network/TcpUnityClient.cs" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TouchHandler.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/TouchHandler.cs" />
-      <change beforePath="$PROJECT_DIR$/Assets/Vuforia/Scripts/DefaultTrackableEventHandler.cs" afterPath="$PROJECT_DIR$/Assets/Vuforia/Scripts/DefaultTrackableEventHandler.cs" />
+    <list default="true" id="10a815dd-67f8-4571-bc44-2b23f19f6831" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PixelmaniaUnityClient/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/main.unity" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Assets/main.unity.meta" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -355,7 +343,7 @@
       <workItem from="1521712567012" duration="23362000" />
       <workItem from="1521791271218" duration="22338000" />
       <workItem from="1522164404158" duration="2095000" />
-      <workItem from="1522244318183" duration="8076000" />
+      <workItem from="1522244318183" duration="8235000" />
     </task>
     <task id="LOCAL-00001" summary="Add image squares with texture slicing">
       <created>1521794812361</created>
@@ -392,11 +380,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521816284674</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add color prompt">
+      <created>1522256643641</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522256643642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78037000" />
+    <option name="totallyTimeSpent" value="78196000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -448,7 +443,8 @@
     <MESSAGE value="Add average color square fill" />
     <MESSAGE value="Add UrlReceiver&#10;Update ImageManager" />
     <MESSAGE value="Before merge with feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Before merge with feature" />
+    <MESSAGE value="Add color prompt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add color prompt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
