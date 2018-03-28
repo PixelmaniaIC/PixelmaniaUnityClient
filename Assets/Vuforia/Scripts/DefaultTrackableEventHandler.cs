@@ -6,6 +6,7 @@ All Rights Reserved.
 Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
+using Assets;
 using UnityEngine;
 using Vuforia;
 
@@ -80,7 +81,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-
+        var squares = GetComponentsInChildren<ImageSquare>(true);
+        
+        foreach (var component in squares)
+            component.SetColliderTo(true);
+        
         // Enable rendering:
         foreach (var component in rendererComponents)
             component.enabled = true;
@@ -104,7 +109,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-
+        var squares = GetComponentsInChildren<ImageSquare>(true);
+        
+        foreach (var component in squares)
+            component.SetColliderTo(false);
+        
         // Disable rendering:
         foreach (var component in rendererComponents)
             component.enabled = false;

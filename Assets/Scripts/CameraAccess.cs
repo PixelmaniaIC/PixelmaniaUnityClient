@@ -10,8 +10,8 @@ namespace Assets
      * Main color accessed through Color public variable
      */
     public class CameraAccess : MonoBehaviour
-    {        
-        public Color32 Color = new Color(0,0,0);
+    {
+        public Color32 Color = new Color(0, 0, 0);
 
         private Camera _camera;
 
@@ -39,47 +39,26 @@ namespace Assets
         /**
          * Updates are fixed due to minimazing loss of fps
          */
-        private void Update()
+        private void FixedUpdate()
         {
-            
-            if (Input.touchCount > 0)
+            if (_renderTexture == null)
             {
-//                Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
-//                RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, Mathf.Infinity);
-//                if (hit.collider != null) {
-//                    Debug.Log (hit.collider.gameObject.name);
-//                }
-                if (Input.GetTouch(0).phase == TouchPhase.Began)
-                {
-                    Ray ray = _camera.ScreenPointToRay(Input.GetTouch(0).position);
-                    RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, Mathf.Infinity);
-                    if (hit.collider != null) {
-                        hit.collider.gameObject.GetComponent<ImageSquare>().OnTouch();
-                    }
-                }
+                _rect = new Rect(0, 0, _targetWidth, _targetHeight);
+                _renderTexture = new RenderTexture(_targetWidth, _targetHeight, 24);
+                _screenShot = new Texture2D(_targetWidth, _targetHeight, TextureFormat.RGB24, false);
             }
-            else
-            {
-                if (_renderTexture == null)
-                {
-                    _rect = new Rect(0, 0, _targetWidth, _targetHeight);
-                    _renderTexture = new RenderTexture(_targetWidth, _targetHeight, 24);
-                    _screenShot = new Texture2D(_targetWidth, _targetHeight, TextureFormat.RGB24, false);
-                }
 
-                _camera.targetTexture = _renderTexture;
-                _camera.Render();
-            
-                RenderTexture.active = _renderTexture;
-            
-                _screenShot.ReadPixels(_rect, 0, 0);
-            
-                _camera.targetTexture = null;
-                RenderTexture.active = null;
-            
-                Color = _screenShot.GetPixel(_targetXPixel, _targetYPixel);
-            
-            }
+            _camera.targetTexture = _renderTexture;
+            _camera.Render();
+
+            RenderTexture.active = _renderTexture;
+
+            _screenShot.ReadPixels(_rect, 0, 0);
+
+            _camera.targetTexture = null;
+            RenderTexture.active = null;
+
+            Color = _screenShot.GetPixel(_targetXPixel, _targetYPixel);
         }
     }
 }

@@ -75,7 +75,7 @@ public class ImageManager : MonoBehaviour
 
                 appliedTexture.SetPixels(colorBlock);
                 appliedTexture.Apply();
-                square.Texture = appliedTexture;
+                square.ImageTexture = appliedTexture;
             }
         }
     }

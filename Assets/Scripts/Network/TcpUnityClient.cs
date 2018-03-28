@@ -11,8 +11,8 @@ public class TcpUnityClient : MonoBehaviour
     public static TcpUnityClient instance = null;
 
     // host address and port
-    public string host = "52.237.74.136";
-    public int port = 4040;
+    public string host = "";
+    public int port = 0000;
 
     private ReceiveManager _receiveManager;
    
