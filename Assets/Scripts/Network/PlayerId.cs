@@ -7,6 +7,8 @@ public class PlayerId : MonoBehaviour
     public static PlayerId instance = null;
 
     private string _id = null;
+    public string UserName { get; set; }
+
     public string id
     {
         get { return _id; }
@@ -15,6 +17,7 @@ public class PlayerId : MonoBehaviour
             if (_id == null)
             {
                 _id = value;
+                Debug.Log(string.Format("Player received id {0}", _id));
             } else
             {
                 // TODO: We need to delete it!
@@ -22,6 +25,7 @@ public class PlayerId : MonoBehaviour
             }
         }
     }
+
 
     private void Awake()
     {

@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class GameManag : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-        Application.runInBackground = true;
-    }
+    public string PlayerName { get; set; }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
+    public static GameManag instance;
+
+    // Use this for initialization
+    void Awake () {
+        Application.runInBackground = true;
+
+        if (instance == null) instance = this;
+        else if (instance != this) Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
+    }
 }
