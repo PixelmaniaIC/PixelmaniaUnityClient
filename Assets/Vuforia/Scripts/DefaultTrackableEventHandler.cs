@@ -19,6 +19,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     public Transform notificationPanel;
     public Transform gamePanel;
     public GameObject cube;
+    public GameObject colorPicker;
+    public GameObject leaderboard;
+    public bool trackingFound;
 
     protected TrackableBehaviour mTrackableBehaviour;
 
@@ -35,6 +38,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
 
         firstTime = true;
+        trackingFound = false;
     }
 
     #endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -80,7 +84,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-
+   
         // Enable rendering:
         foreach (var component in rendererComponents)
             component.enabled = true;
@@ -93,9 +97,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
 
-        notificationPanel.gameObject.SetActive(false);
         gamePanel.gameObject.SetActive(true);
-        cube.SetActive(true);
+        notificationPanel.gameObject.SetActive(false);
+        // cube.SetActive(false);
+        colorPicker.SetActive(false);
+
+        trackingFound = true;
     }
 
 
@@ -121,9 +128,17 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         {
             notificationPanel.gameObject.SetActive(true);
             gamePanel.gameObject.SetActive(false);
-            cube.SetActive(false);
+          //  cube.SetActive(false);
             firstTime = false;
         }
+        else
+        {
+            // cube.SetActive(true);
+        }
+
+        colorPicker.SetActive(true);
+
+        trackingFound = false;
     }
 
     #endregion // PRIVATE_METHODS

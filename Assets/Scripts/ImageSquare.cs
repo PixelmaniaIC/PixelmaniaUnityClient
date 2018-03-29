@@ -8,6 +8,7 @@ namespace Assets
     {
         public int Index;
         public Texture2D Texture;
+        public Texture2D pictureFrame;
         public Color ForegroundColor;
         public ColorState ColorState;
         
@@ -23,6 +24,8 @@ namespace Assets
             _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             var initTexture = new Texture2D(Width, Height);
             _spriteRenderer.sprite = Sprite.Create(initTexture, new Rect(0, 0, Width, Height), new Vector2(0.5f, 0.5f));
+
+
         }
 
         public void OnTouch()
