@@ -1,10 +1,21 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Leaderboard : IdReceiveListener {
 
     public LeaderboardDrawer leaderboardDrawer;
 
     private List<User> _users = new List<User>();
+
+    // Принцесса, эту часть удали, это просто для тестинга
+    public void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            AddUser(new User(i.ToString(), "Bitch" + i.ToString(), i * 10, true));
+            i++;
+        }
+    }
 
     // Initializing current user. It should be in separate class
     public override void OnIdReceived()

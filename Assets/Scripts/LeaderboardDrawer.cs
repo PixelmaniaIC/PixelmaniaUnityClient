@@ -4,6 +4,7 @@ using UnityEngine;
 using Vuforia;
 using UnityEngine.UI;
 using System.Linq;
+using System;
 
 public class LeaderboardDrawer : MonoBehaviour {
 
@@ -17,12 +18,7 @@ public class LeaderboardDrawer : MonoBehaviour {
     void Start()
     {
         List<User> allUsers = leaderboardController.GetUsers().OrderByDescending(o => o.score).ToList();
-        List<User> leaders = allUsers.GetRange(0, playerNames.Count);
-
-        for (int i = 0; i < playerNames.Count; i++)
-        {
-            playerNames[i].text = leaders[i].name;
-        }
+        UpdateLeaderboard(allUsers);
     }
 
     public void HideOrShow() {
@@ -40,15 +36,24 @@ public class LeaderboardDrawer : MonoBehaviour {
             colorPicker.SetActive(false);
         }		 
 	}   
-
+    
     public void UpdateLeaderboard(List<User> allUsers)
     {
-        List<User> sortedUsers = allUsers.OrderByDescending(o => o.score).ToList();
-        List<User> leaders = sortedUsers.GetRange(0, playerNames.Count);
+        int countOfUsers = Math.Min(playerNames.Count, allUsers.Count);
 
-         for (int i = 0; i < playerNames.Count; i++)
-         {
-             playerNames[i].text = leaders[i].name;
-         }
+        List<User> leaders = allUsers.GetRange(0, countOfUsers);
+
+        for (int i = 0; i < playerNames.Count; i++)
+        {
+            if (i < countOfUsers)
+            {
+                playerNames[i].text = leaders[i].name;
+                playerNames[i].gameObject.SetActive(true);
+            }
+            else
+            {
+                playerNames[i].gameObject.SetActive(false);
+            }
+        }
     }
 }
