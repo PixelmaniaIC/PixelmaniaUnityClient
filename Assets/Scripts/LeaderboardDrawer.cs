@@ -17,8 +17,8 @@ public class LeaderboardDrawer : MonoBehaviour {
 
     void Start()
     {
-        List<User> allUsers = leaderboardController.GetUsers().OrderByDescending(o => o.score).ToList();
-        UpdateLeaderboard(allUsers);
+        List<User> allUsers = leaderboardController.GetUsers();
+        UpdateLeaderboard(allUsers);        
     }
 
     public void HideOrShow() {
@@ -39,17 +39,49 @@ public class LeaderboardDrawer : MonoBehaviour {
     
     public void UpdateLeaderboard(List<User> allUsers)
     {
-        int countOfUsers = Math.Min(playerNames.Count, allUsers.Count);
+        int leadersCount = Math.Min(playerNames.Count, allUsers.Count);
 
-        List<User> leaders = allUsers.GetRange(0, countOfUsers);
+        List<User> leaders = allUsers.OrderByDescending(user => user.score).ToList().GetRange(0, leadersCount);
+
+        User currentUser = allUsers.Find(user => user.IsCurrent());
+        int currentUserPosition = allUsers.FindIndex(user => user.IsCurrent()) + 1;
 
         for (int i = 0; i < playerNames.Count; i++)
         {
-            if (i < countOfUsers)
+            if (i < leadersCount)
             {
-                playerNames[i].text = leaders[i].name;
+                if (currentUserPosition > playerNames.Count)
+                {
+                    if (i == 3)
+                    {
+                        playerNames[i].text = "...";
+                    }
+                    else if (i == 5)
+                    {
+                        playerNames[i].color = Color.cyan; // new Color(253, 87, 178, 255);
+                        playerNames[i].text = currentUserPosition.ToString() + ". " + currentUser.name + " (you) - " + currentUser.score;
+                    }
+                }
+
+                else
+                {
+                    string position = (i + 1).ToString();
+                    playerNames[i].text = position + ". " + leaders[i].name + " - " + leaders[i].score;
+
+                    if (leaders[i].IsCurrent())
+                    {
+                        playerNames[i].color = Color.cyan; // new Color(253, 87, 178, 255);
+                        playerNames[i].text += " (you)";
+                    }
+                    else
+                    {
+                        playerNames[i].color = Color.white;
+                    }
+                }
+
                 playerNames[i].gameObject.SetActive(true);
             }
+
             else
             {
                 playerNames[i].gameObject.SetActive(false);
