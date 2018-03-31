@@ -30,6 +30,9 @@ public class ImageManager : MonoBehaviour
         {
             yield return www;
             SetTexture(www.texture);
+            Debug.Log(gameObject.name);
+            //TODO: it will better to rewrite this shit
+            GetComponent<ImageDownloaded>().OnImageDownloaded();
         }
     }
 

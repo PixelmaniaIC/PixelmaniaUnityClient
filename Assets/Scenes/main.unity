@@ -151,7 +151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &91109769
 GameObject:
@@ -483,7 +483,6 @@ GameObject:
   - component: {fileID: 298456301}
   - component: {fileID: 298456306}
   - component: {fileID: 298456307}
-  - component: {fileID: 298456308}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: Untagged
@@ -807,7 +806,7 @@ Transform:
   m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children: []
   m_Father: {fileID: 298456305}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -4, y: 39, z: -1.6}
 --- !u!114 &435273446
 MonoBehaviour:
@@ -1267,11 +1266,10 @@ GameObject:
   - component: {fileID: 1007051852}
   - component: {fileID: 1007051853}
   - component: {fileID: 1007051849}
-  - component: {fileID: 1007051852}
   - component: {fileID: 1007051855}
   - component: {fileID: 1007051854}
-  - component: {fileID: 1007051853}
   - component: {fileID: 1007051843}
+  - component: {fileID: 1007051850}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1366,7 +1364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImageManager: {fileID: 1683412550}
---- !u!114 &1007051852
+--- !u!114 &1007051850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1374,10 +1372,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007051842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e9770fc0b09af41a657440e332e56a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e35bc33fd8a0b0409633928585da114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageHandler: {fileID: 1683412550}
+  imageManager: {fileID: 1683412550}
 --- !u!114 &1007051851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,10 +1407,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007051842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75ac8bb8c6de4d549868ea40a5a3244c, type: 3}
+  m_Script: {fileID: 11500000, guid: 00c2aa5852004c33a1f912f6345ee05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leaderboard: {fileID: 33720073}
+  ImageManager: {fileID: 1683412550}
 --- !u!114 &1007051854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1434,23 +1432,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47238cdcf9e7b57448721eb07b6d5352, type: 3}
-  m_Script: {fileID: 11500000, guid: a3e9770fc0b09af41a657440e332e56a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   leaderboard: {fileID: 33720073}
-  imageHandler: {fileID: 1683412550}
---- !u!114 &1007051853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1007051842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00c2aa5852004c33a1f912f6345ee05c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImageManager: {fileID: 1683412550}
 --- !u!21 &1015622796
 Material:
   serializedVersion: 6
@@ -2579,6 +2563,7 @@ GameObject:
   - component: {fileID: 1683412545}
   - component: {fileID: 1683412544}
   - component: {fileID: 1683412550}
+  - component: {fileID: 1683412551}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -2706,6 +2691,17 @@ MonoBehaviour:
   ImageHeight: 128
   ImageXOffset: 0
   ImageYOffset: 0
+--- !u!114 &1683412551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683412543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0523005e35810a14c98ca9c8bc16612b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1759338571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2900,7 +2896,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2068575152
 GameObject:
