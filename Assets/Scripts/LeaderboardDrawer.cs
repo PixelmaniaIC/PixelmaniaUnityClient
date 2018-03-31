@@ -59,7 +59,7 @@ public class LeaderboardDrawer : MonoBehaviour {
                     else if (i == 5)
                     {
                         playerNames[i].color = Color.cyan; // new Color(253, 87, 178, 255);
-                        playerNames[i].text = currentUserPosition.ToString() + ". " + currentUser.name + " (you) - " + currentUser.score;
+                        playerNames[i].text = currentUserPosition.ToString() + ". " + currentUser.name + " - " + currentUser.score + " (you)";
                     }
                 }
 
