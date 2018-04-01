@@ -27,13 +27,15 @@ public class LeaderboardDrawer : MonoBehaviour {
             leaderboardPanel.SetActive(false);
             if (!trackableHandler.trackingFound) 
             {       
-                colorPicker.SetActive(true);
-            }            
+                colorPicker.SetActive(true);               
+            }
+            cube.SetActive(true);
         }
         else
         {
             leaderboardPanel.SetActive(true);           
             colorPicker.SetActive(false);
+            cube.SetActive(false);
         }		 
 	}   
     

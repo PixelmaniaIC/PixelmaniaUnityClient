@@ -103,6 +103,7 @@ var squares = GetComponentsInChildren<ImageSquare>(true);
         gamePanel.gameObject.SetActive(true);
         notificationPanel.gameObject.SetActive(false);
         colorPicker.SetActive(false);
+        cube.SetActive(true);
 
         trackingFound = true;
     }
@@ -136,7 +137,7 @@ var squares = GetComponentsInChildren<ImageSquare>(true);
             gamePanel.gameObject.SetActive(false);
             cube.SetActive(false);
             firstTime = false;
-        }
+        }  
 
         colorPicker.SetActive(true);
 

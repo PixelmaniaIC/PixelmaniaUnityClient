@@ -29,27 +29,26 @@ public class TouchHandler : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved))
         {
-            Ray ray = _camera.ScreenPointToRay(Input.GetTouch(0).position);
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
-            if (hit.collider != null)
-            {
+             Ray ray = _camera.ScreenPointToRay(Input.GetTouch(0).position);
+             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
+             if (hit.collider != null)
+             {
                 Debug.Log("Hit collider " + hit.collider.name, this);
-            }
-            else
-            {
+
                 if (_colorState.GetComponent<MeshRenderer>().enabled)
                 {
                     _animatior.Play("Disappearing");
-                } else
+                }
+                else
                 {
                     // TODO optimize
                     _colorState.GetComponent<MeshRenderer>().enabled = true;
                 }
 
                 Color selectedColor = _colorChanger.color;
-                _colorState.ColorUpdate(selectedColor);                
+                _colorState.ColorUpdate(selectedColor);
 
-                Debug.Log("Color selected " + selectedColor, this);
+                Debug.Log("Color selected " + selectedColor, this);           
             }
         }
     }
