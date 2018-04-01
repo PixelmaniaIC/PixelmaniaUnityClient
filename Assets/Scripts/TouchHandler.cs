@@ -40,12 +40,14 @@ public class TouchHandler : MonoBehaviour
                 if (_colorState.GetComponent<MeshRenderer>().enabled)
                 {
                     _animatior.Play("Disappearing");
+                } else
+                {
+                    // TODO optimize
+                    _colorState.GetComponent<MeshRenderer>().enabled = true;
                 }
 
                 Color selectedColor = _colorChanger.color;
-                _colorState.ColorUpdate(selectedColor);
-                // TODO optimize
-                _colorState.GetComponent<MeshRenderer>().enabled = true;
+                _colorState.ColorUpdate(selectedColor);                
 
                 Debug.Log("Color selected " + selectedColor, this);
             }

@@ -8,6 +8,7 @@ public class ExitConfirmation : MonoBehaviour {
     public GameObject gamePanel;
     public GameObject cube;
     public GameObject target;
+    public GameObject leaderboardPanel;
 
     public void ShowConfirmation()
     {
@@ -15,6 +16,8 @@ public class ExitConfirmation : MonoBehaviour {
         gamePanel.SetActive(false);        
         cube.SetActive(false);
         target.SetActive(false);
+        leaderboardPanel.SetActive(false);
+
     }
 
     public void Resume()
