@@ -30,7 +30,6 @@ public class ExitConfirmation : MonoBehaviour {
 
     public void Quit()
     {
-        Debug.Log("I'm out");
         Application.Quit();
     }
 }

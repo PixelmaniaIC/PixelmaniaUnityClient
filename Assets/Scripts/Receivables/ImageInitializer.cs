@@ -16,9 +16,7 @@ namespace Assets.Scripts.Receivables
         }
         public void ReceiveMessage(Message message)
         {
-            Debug.Log("Message Recieved = " + message);
             var boxes = ColorBoxMessage.Build(message.payload);
-            Debug.Log("Received");
             ImageManager.ReceiveColors(boxes);    
         }
     }

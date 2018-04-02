@@ -14,7 +14,6 @@ namespace Receivables
 
         public void ReceiveMessage(Message message)
         {
-            Debug.Log("Received image " + message.networkName);
             imageHandler.StartCoroutine("DownloadImage", message.payload);
         }
     }

@@ -13,7 +13,6 @@ namespace Messages
 
         public static ColorUpdateMessage Build(string payload)
         {
-            Debug.Log("Message Colors " + payload);
             return JsonUtility.FromJson<ColorUpdateMessage>(payload);
         }
     }

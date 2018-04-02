@@ -24,10 +24,8 @@ public class StartMenu : MonoBehaviour {
         {
             PlayerId.instance.UserName = input.text;
         }
-        Debug.Log(string.Format("Player Name is: {0}", PlayerId.instance.UserName));
     }
 
-    //TODO: проверить, кажется, не работает
     public void QuitGame() 
     {
         Application.Quit();

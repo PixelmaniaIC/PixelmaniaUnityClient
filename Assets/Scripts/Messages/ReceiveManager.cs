@@ -18,20 +18,11 @@ namespace Messages
             var message = JsonUtility.FromJson<Message>(jsonMessage);
 
             // TODO:
-            if (message == null)
+            if (message != null)
             {
-                Debug.LogWarning("Empty message cought");
-            }
-            else
-            {
-                Debug.LogWarning(jsonMessage);
                 var receiveable = _receivables.First(x => x.NetworkName == message.networkName);
 
-                if (receiveable == null)
-                {
-                    Debug.LogError(string.Format("Unit with name {0} Not Found", message.networkName));
-                }
-                else
+                if (receiveable != null)
                 {
                     receiveable.ReceiveMessage(message);
                 }

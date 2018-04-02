@@ -41,7 +41,6 @@ public class TcpUnityClient : MonoBehaviour
 
         if (received_data != null)
         {
-            Debug.Log(received_data);
             _receiveManager.Process(received_data);
         }
     }
@@ -55,13 +54,10 @@ public class TcpUnityClient : MonoBehaviour
     {
         try
         {
-            Debug.Log("Start connection");
             _tcpSocket = new TcpClient(host, port);
             _netStream = _tcpSocket.GetStream();
             _socketWriter = new StreamWriter(_netStream);
             _socketReader = new StreamReader(_netStream);
-            Debug.Log("Connected to localhost");
-
         }
         catch (Exception e)
         {
@@ -72,7 +68,6 @@ public class TcpUnityClient : MonoBehaviour
     public void SendServerMessage(Message sendMessage)
     {
         var jsonMessage = JsonUtility.ToJson(sendMessage);
-        Debug.Log(jsonMessage);
         WriteSocket(jsonMessage);
     }
 
@@ -85,7 +80,6 @@ public class TcpUnityClient : MonoBehaviour
 
     private String ReadSocket()
     {
-        // TODO: Должен придумать PlayerId
         if (_netStream.DataAvailable)
             return _socketReader.ReadLine();
 

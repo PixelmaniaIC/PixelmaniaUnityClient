@@ -17,11 +17,6 @@ public class PlayerId : MonoBehaviour
             if (_id == null)
             {
                 _id = value;
-                Debug.Log(string.Format("Player received id {0}", _id));
-            } else
-            {
-                // TODO: We need to delete it!
-                throw new System.Exception(value.ToString());
             }
         }
     }
