@@ -18,6 +18,9 @@ public class ColorState : MonoBehaviour
     public void ColorUpdate(Color32 color)
     {
         Debug.Log("Switching color");
+
+        FindObjectOfType<AudioManager>().Play("PickColor");
+
         CurrentColor = color;
         _render.material.color = color;
     }
