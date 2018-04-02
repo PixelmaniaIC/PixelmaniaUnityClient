@@ -29,7 +29,6 @@ namespace Assets
         
         private void Awake()
         {
-            Application.runInBackground = true;
             _collider = gameObject.GetComponent<BoxCollider2D>();
             _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             var initTexture = new Texture2D(Width, Height);
@@ -44,7 +43,6 @@ namespace Assets
         }
  
         IEnumerator SingleOrDouble(){
-            Debug.Log("HotCoroutine");
             yield return new WaitForSeconds(0.2f);
             if (_touch.tapCount == 2)
             {
@@ -56,7 +54,6 @@ namespace Assets
                 }
             }
             else if (_touch.tapCount == 1 || _touch.tapCount >= 3) {
-                Debug.Log ("HotTouchSingle");
                 SendColorsToServer();
                 StopCoroutine("SingleOrDouble");
                 _lastUpdate = 0;
@@ -70,9 +67,7 @@ namespace Assets
             
             var promptScript = prompt.GetComponent<PromptScript>();
             promptScript.ForegroundColor = ForegroundColor;
-            promptScript.SetTexture();
-            
-            Debug.Log("Instantiated Prompt");
+            promptScript.SetTexture();            
         }
 
         void OnMouseDown()
@@ -80,7 +75,6 @@ namespace Assets
             if (Input.touchCount > 0) 
             {
                 _lastUpdate += Time.deltaTime;
-                Debug.Log("HotTouch  " + _lastUpdate);
                 _touch = Input.GetTouch(0);
                 if (_lastUpdate < 0.2f)
                 {
@@ -147,7 +141,6 @@ namespace Assets
                 }
             }
             
-            Debug.Log("Error = " + (r + g + b));
             ImageTexture.Apply();
         }
     }

@@ -20,7 +20,6 @@ namespace Messages
         public override string ToString()
         {
             Color32 color = new Color(r, g, b);
-            Debug.Log("Sending colors " + color);
             return string.Format("{{ \"r\": {0}, \"g\": {1}, \"b\": {2}, \"index\": {3} }}", color.r, color.g, color.b, Index);
         }
     }

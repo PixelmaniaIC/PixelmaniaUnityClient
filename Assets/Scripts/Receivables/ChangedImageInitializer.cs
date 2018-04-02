@@ -13,7 +13,6 @@ public class ChangedImageInitializer : MonoBehaviour, IReceivable {
 
     public void ReceiveMessage(Message message)
     {
-        Debug.Log("Message Recieved = " + message);
         var boxes = ColorBoxMessage.Build(message.payload);
 
         boxes.cubes.ForEach(x => imageManager.ApplyColor(GetColor(x), x.index));

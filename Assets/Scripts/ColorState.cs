@@ -17,7 +17,6 @@ public class ColorState : MonoBehaviour
 
     public void ColorUpdate(Color32 color)
     {
-        Debug.Log("Switching color");
         CurrentColor = color;
         _render.material.color = color;
     }

@@ -33,7 +33,6 @@ public class PromptScript : MonoBehaviour {
 		_spriteRenderer.sprite = Sprite.Create(initTexture, new Rect(0, 0, Width, Height), new Vector2(0.5f, 0.5f));
 		
 		_isActive = true;
-		Debug.Log("Set color");
 	}
 	
 	// Update is called once per frame

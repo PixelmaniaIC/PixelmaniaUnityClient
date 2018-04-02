@@ -12,7 +12,6 @@ namespace Messages
 
         public static ColorBoxMessage Build(string payload)
         {
-            Debug.Log("Payload received " + payload);    
             return JsonUtility.FromJson<ColorBoxMessage>(payload);
         }
     }

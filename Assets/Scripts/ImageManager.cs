@@ -30,8 +30,7 @@ public class ImageManager : MonoBehaviour
         {
             yield return www;
             SetTexture(www.texture);
-            Debug.Log(gameObject.name);
-            //TODO: it will better to rewrite this shit
+
             GetComponent<ImageDownloaded>().OnImageDownloaded();
         }
     }
@@ -70,7 +69,6 @@ public class ImageManager : MonoBehaviour
             for (var j = 0; j < 4; j++)
             {
                 var squareNum = (12 + j) - i * 4;
-                Debug.Log(squareNum);
                 var square = _squares[squareNum];
 
                 var colorBlock = texture.GetPixels(ImageWidth * j, ImageHeight * i, ImageWidth, ImageHeight);

@@ -11,7 +11,7 @@ public class GameManag : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         Application.runInBackground = true;
-
+        
         if (instance == null) instance = this;
         else if (instance != this) Destroy(gameObject);
 

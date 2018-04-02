@@ -14,6 +14,7 @@ public class TouchHandler : MonoBehaviour
     private ColorState _colorState;
     private RandomColorChanger _colorChanger;
     private Animator _animatior;
+    private MeshRenderer _meshRender;
     private Camera _camera;
 
     void Start()
@@ -23,6 +24,7 @@ public class TouchHandler : MonoBehaviour
         _colorChanger = colorPicker.GetComponent<RandomColorChanger>();
         _animatior = colorState.GetComponent<Animator>();
         _camera = GetComponent<Camera>();
+        _meshRender = _colorState.GetComponent<MeshRenderer>();
     }
 
     void Update()
@@ -33,22 +35,17 @@ public class TouchHandler : MonoBehaviour
              RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
              if (hit.collider != null)
              {
-                Debug.Log("Hit collider " + hit.collider.name, this);
-
-                if (_colorState.GetComponent<MeshRenderer>().enabled)
+                if (_meshRender.enabled)
                 {
                     _animatior.Play("Disappearing");
                 }
                 else
                 {
-                    // TODO optimize
-                    _colorState.GetComponent<MeshRenderer>().enabled = true;
+                    _meshRender.enabled = true;
                 }
 
                 Color selectedColor = _colorChanger.color;
                 _colorState.ColorUpdate(selectedColor);
-
-                Debug.Log("Color selected " + selectedColor, this);           
             }
         }
     }
