@@ -74,6 +74,8 @@ namespace Assets
         {
             if (Input.touchCount > 0) 
             {
+                FindObjectOfType<AudioManager>().Play("OpenSquare");
+
                 _lastUpdate += Time.deltaTime;
                 _touch = Input.GetTouch(0);
                 if (_lastUpdate < 0.2f)
