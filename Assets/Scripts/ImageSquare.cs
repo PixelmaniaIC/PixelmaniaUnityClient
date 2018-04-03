@@ -13,6 +13,7 @@ namespace Assets
         public Color ForegroundColor;
         public ColorState ColorState;
         public GameObject Prompt;
+        public GameObject Cube;
         
         public int Width = 128;
         public int Height = 128;
@@ -55,6 +56,7 @@ namespace Assets
             }
             else if (_touch.tapCount == 1 || _touch.tapCount >= 3) {
                 SendColorsToServer();
+                Cube.SetActive(false);
                 StopCoroutine("SingleOrDouble");
                 _lastUpdate = 0;
             }

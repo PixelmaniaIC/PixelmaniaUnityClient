@@ -10,6 +10,7 @@ public class ImageManager : MonoBehaviour
 {
     public Transform ImageSquare;
     public ColorState ColorState;
+    public GameObject Cube;
 
     public int ImageWidth = 128;
     public int ImageHeight = 128;
@@ -53,6 +54,7 @@ public class ImageManager : MonoBehaviour
                 var square = obj.GetComponent<ImageSquare>();
                 square.Index = 4 * i + j;
                 square.ColorState = ColorState;
+                square.Cube = Cube;
                 _squares.Add(square);
 
                 posX += ImageXOffset;

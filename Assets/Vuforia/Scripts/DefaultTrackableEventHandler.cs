@@ -19,6 +19,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     public Transform notificationPanel;
     public Transform gamePanel;
+    public TouchHandler TouchHandler;
     public GameObject cube;
     public GameObject colorPicker;
     public GameObject leaderboard;
@@ -84,7 +85,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-var squares = GetComponentsInChildren<ImageSquare>(true);
+        var squares = GetComponentsInChildren<ImageSquare>(true);
+        
+        TouchHandler.IsTracking = true;
         
         foreach (var component in squares)
             component.SetColliderTo(true);
@@ -118,6 +121,8 @@ var squares = GetComponentsInChildren<ImageSquare>(true);
         
         foreach (var component in squares)
             component.SetColliderTo(false);
+
+        TouchHandler.IsTracking = false;
         
         // Disable rendering:
         foreach (var component in rendererComponents)
@@ -137,8 +142,12 @@ var squares = GetComponentsInChildren<ImageSquare>(true);
             gamePanel.gameObject.SetActive(false);
             cube.SetActive(false);
             firstTime = false;
-        }  
-
+        }
+        else
+        {
+            cube.SetActive(true);            
+        }
+        
         colorPicker.SetActive(true);
 
         trackingFound = false;

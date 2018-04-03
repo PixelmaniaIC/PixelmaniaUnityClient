@@ -9,7 +9,8 @@ public class TouchHandler : MonoBehaviour
 {
     public Transform colorPicker;
     public Transform colorState;
-
+    public bool IsTracking;
+    
     private TcpUnityClient _client;
     private ColorState _colorState;
     private RandomColorChanger _colorChanger;
@@ -19,6 +20,7 @@ public class TouchHandler : MonoBehaviour
 
     void Start()
     {
+        IsTracking = false;
         _client = TcpUnityClient.instance;
         _colorState = colorState.GetComponent<ColorState>();
         _colorChanger = colorPicker.GetComponent<RandomColorChanger>();
@@ -29,12 +31,10 @@ public class TouchHandler : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved))
+        if (Input.GetMouseButtonDown(0) || (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
-             Ray ray = _camera.ScreenPointToRay(Input.GetTouch(0).position);
-             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity);
-             if (hit.collider != null)
-             {
+            if (!IsTracking)
+            {
                 if (_meshRender.enabled)
                 {
                     _animatior.Play("Disappearing");
