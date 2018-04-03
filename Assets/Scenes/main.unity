@@ -661,6 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorPicker: {fileID: 1878157550}
   colorState: {fileID: 435273445}
+  IsTracking: 0
 --- !u!114 &298456307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3134,6 +3135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notificationPanel: {fileID: 975231509}
   gamePanel: {fileID: 902266974}
+  TouchHandler: {fileID: 298456306}
   cube: {fileID: 435273441}
   colorPicker: {fileID: 1878157549}
   leaderboard: {fileID: 2068575152}
@@ -3185,6 +3187,7 @@ MonoBehaviour:
   ImageSquare: {fileID: 4749518471176738, guid: a98030ca434b6164886ba04d37f7baa2,
     type: 2}
   ColorState: {fileID: 435273447}
+  Cube: {fileID: 435273441}
   ImageWidth: 128
   ImageHeight: 128
   ImageXOffset: 0
