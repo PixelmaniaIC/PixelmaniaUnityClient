@@ -10,7 +10,7 @@ public class Leaderboard : IdReceiveListener {
     // Initializing current user. It should be in separate class
     public override void OnIdReceived()
     {
-        var currentUser = new User(PlayerId.instance.id, TcpUnityClient.instance.name, 0, true);
+        var currentUser = new User(PlayerId.instance.id, PlayerId.instance.UserName, 0, true);
         AddUser(currentUser);        
     }
 
