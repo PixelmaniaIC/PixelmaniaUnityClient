@@ -6,7 +6,7 @@ using System.Net.Sockets;
 using Messages;
 using UnityEngine;
 
-public class TcpUnityClient : MonoBehaviour
+public class TcpUnityClient : FinishGameListener
 {
     public static TcpUnityClient instance = null;
 
@@ -15,28 +15,35 @@ public class TcpUnityClient : MonoBehaviour
     public int port = 0000;
 
     private ReceiveManager _receiveManager;
-   
+    private Boolean _connectionOpened = false;
+
     #region NetworkEntities
     
     private TcpClient _tcpSocket;
     private NetworkStream _netStream;
     private StreamWriter _socketWriter;
     private StreamReader _socketReader;
-    
+
     #endregion
-    
+
+    public override void OnGameFinished()
+    {
+        CloseSocket();
+    }
+
     private void Awake()
     {
         if (instance == null) instance = this;
         else if (instance != this) Destroy(gameObject);
 
         _receiveManager = new ReceiveManager(GetComponents<IReceivable>());
-        DontDestroyOnLoad(gameObject);
         SetupSocket();
     }
 
     private void Update()
     {
+        if (!_connectionOpened) return;
+
         string received_data = ReadSocket();
 
         if (received_data != null)
@@ -58,6 +65,8 @@ public class TcpUnityClient : MonoBehaviour
             _netStream = _tcpSocket.GetStream();
             _socketWriter = new StreamWriter(_netStream);
             _socketReader = new StreamReader(_netStream);
+
+            _connectionOpened = true;
         }
         catch (Exception e)
         {
@@ -67,6 +76,8 @@ public class TcpUnityClient : MonoBehaviour
 
     public void SendServerMessage(Message sendMessage)
     {
+        if (!_connectionOpened) return;
+
         var jsonMessage = JsonUtility.ToJson(sendMessage);
         WriteSocket(jsonMessage);
     }
@@ -86,11 +97,12 @@ public class TcpUnityClient : MonoBehaviour
         return null;
     }
 
-    private void CloseSocket()
+    public void CloseSocket()
     {
         _socketWriter.Close();
         _socketReader.Close();
         _tcpSocket.Close();
-    }
 
+        _connectionOpened = false;
+    }
 }

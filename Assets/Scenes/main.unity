@@ -1499,6 +1499,7 @@ GameObject:
   - component: {fileID: 1007051854}
   - component: {fileID: 1007051843}
   - component: {fileID: 1007051850}
+  - component: {fileID: 1007051856}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1579,7 +1580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57ec9d2347e6194096eb32fd40509aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  host: 52.237.74.136
+  host: localhost
   port: 4040
 --- !u!114 &1007051849
 MonoBehaviour:
@@ -1664,6 +1665,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leaderboard: {fileID: 33720073}
+--- !u!114 &1007051856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007051842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c2c92e3fcee7e44ac58c252e035a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishGameListeners:
+  - {fileID: 1007051848}
 --- !u!21 &1015622796
 Material:
   serializedVersion: 6
