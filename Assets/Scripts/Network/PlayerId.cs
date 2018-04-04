@@ -14,10 +14,7 @@ public class PlayerId : MonoBehaviour
         get { return _id; }
         set
         {
-            if (_id == null)
-            {
-                _id = value;
-            }
+            _id = value;
         }
     }
 
