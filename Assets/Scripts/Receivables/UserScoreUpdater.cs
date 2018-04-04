@@ -7,6 +7,7 @@ using System;
 public class UserScoreUpdater : MonoBehaviour, IReceivable
 {
     public Leaderboard leaderboard;
+    public ImageManager ImageManager;
 
     public string NetworkName
     {
@@ -15,6 +16,8 @@ public class UserScoreUpdater : MonoBehaviour, IReceivable
 
     public void ReceiveMessage(Message message)
     {
-        leaderboard.UpdateScore(message.playerId, Int32.Parse(message.payload));
+        var payload = ScoreUpdate.Build(message.payload);
+        leaderboard.UpdateScore(message.playerId, payload.score);
+        ImageManager.PopUpScores(payload.score, payload.index);
     }
 }

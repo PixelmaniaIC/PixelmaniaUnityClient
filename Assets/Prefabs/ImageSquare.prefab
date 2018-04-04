@@ -83,6 +83,9 @@ MonoBehaviour:
   ForegroundColor: {r: 0, g: 0, b: 0, a: 0}
   ColorState: {fileID: 0}
   Prompt: {fileID: 1022110061781510, guid: 085ba21c125a19d46b1f5ae6ac91bf3b, type: 2}
+  Cube: {fileID: 0}
+  ScoresPrompt: {fileID: 1649483646768596, guid: 2c8cb8a4db9c3e24288d302e6f3d4524,
+    type: 2}
   Width: 128
   Height: 128
   Position: {x: 0, y: 0, z: 0}
