@@ -42,12 +42,13 @@ public class LeaderboardDrawer : MonoBehaviour {
     public void UpdateLeaderboard(List<User> allUsers)
     {
         int leadersCount = Math.Min(playerNames.Count, allUsers.Count);
-
-        List<User> leaders = allUsers.OrderByDescending(user => user.score).ToList().GetRange(0, leadersCount);
+    
+        List<User> sortedUsers = allUsers.OrderByDescending(user => user.score).ToList();
+        List<User> leaders = sortedUsers.GetRange(0, leadersCount);
 
         User currentUser = allUsers.Find(user => user.IsCurrent());
-        int currentUserPosition = allUsers.FindIndex(user => user.IsCurrent()) + 1;
-
+        int currentUserPosition = sortedUsers.FindIndex(user => user.IsCurrent()) + 1;
+    
         for (int i = 0; i < playerNames.Count; i++)
         {
             if (i < leadersCount)
@@ -56,12 +57,27 @@ public class LeaderboardDrawer : MonoBehaviour {
                 {
                     if (i == 3)
                     {
+                        playerNames[i].color = Color.white;
                         playerNames[i].text = "...";
                     }
-                    else if (i == 5)
+                    else if (i == 4)
                     {
-                        playerNames[i].color = Color.cyan; // new Color(253, 87, 178, 255);
-                        playerNames[i].text = currentUserPosition.ToString() + ". " + currentUser.name + " - " + currentUser.score + " (you)";
+                        playerNames[i].color = Color.cyan;
+                        playerNames[i].text = currentUserPosition.ToString() + ". " + currentUser.name + " - " + currentUser.score;
+                    }
+                    else
+                    {
+                        string position = (i + 1).ToString();
+                        playerNames[i].text = position + ". " + leaders[i].name + " - " + leaders[i].score;
+
+                        if (!leaders[i].online)
+                        {
+                            playerNames[i].color = Color.grey;
+                        }
+                        else
+                        {
+                            playerNames[i].color = Color.white;
+                        }
                     }
                 }
 
@@ -72,22 +88,25 @@ public class LeaderboardDrawer : MonoBehaviour {
 
                     if (leaders[i].IsCurrent())
                     {
-                        playerNames[i].color = Color.cyan; // new Color(253, 87, 178, 255);
-                        playerNames[i].text += " (you)";
+                        playerNames[i].color = Color.cyan;
+                    }
+                    else if (!leaders[i].online)
+                    {
+                        playerNames[i].color = Color.grey;
                     }
                     else
                     {
                         playerNames[i].color = Color.white;
                     }
                 }
-
-                playerNames[i].gameObject.SetActive(true);
             }
-
+            
             else
             {
-                playerNames[i].gameObject.SetActive(false);
+                playerNames[i].text = "";             
             }
+
+            playerNames[i].gameObject.SetActive(true);
         }
     }
 }
