@@ -83,6 +83,13 @@ public class ImageManager : MonoBehaviour
         }
     }
 
+    public void PopUpScores(int score, int squareIndex)
+    {
+        Debug.Log("HotSquare " + squareIndex);
+        var square = _squares.Find(x => x.Index == squareIndex);
+        square.PromptReceivedScores(score);
+    }
+
     public void ReceiveColors(ColorBoxMessage boxes)
     {
         for (var i = 0; i < 16; i++)

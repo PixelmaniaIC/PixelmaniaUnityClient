@@ -1519,6 +1519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leaderboard: {fileID: 33720073}
+  ImageManager: {fileID: 1683412550}
 --- !u!114 &1007051844
 MonoBehaviour:
   m_ObjectHideFlags: 0

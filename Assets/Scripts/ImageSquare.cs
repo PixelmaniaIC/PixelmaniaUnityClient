@@ -14,6 +14,7 @@ namespace Assets
         public ColorState ColorState;
         public GameObject Prompt;
         public GameObject Cube;
+        public GameObject ScoresPrompt;
         
         public int Width = 128;
         public int Height = 128;
@@ -98,6 +99,15 @@ namespace Assets
             TcpUnityClient.instance.SendServerMessage(msg);
         }
 
+        public void PromptReceivedScores(int scores)
+        {
+            var prompt = Instantiate(ScoresPrompt, Position, Quaternion.identity);
+            prompt.transform.parent = this.transform.parent;
+            prompt.transform.position = new Vector3(prompt.transform.position.x, prompt.transform.position.y, prompt.transform.position.z - 1);
+            var scoresComponent = prompt.GetComponent<ScoresPrompt>();
+            scoresComponent.ShowReceivedScore(scores);
+        }
+        
         public void UpdateForgroundColor()
         {
             _initColoredTexture = new Texture2D(Width, Height);
