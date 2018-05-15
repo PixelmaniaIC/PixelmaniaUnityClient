@@ -7,7 +7,12 @@ namespace Assets.Scripts.Receivables
     public class UrlReceiver : MonoBehaviour, IReceivable
     {
         public ImageManager ImageManager;
-        
+
+        public FactsPanelUI panel;
+
+        public Text description;
+        public Text title;
+
         public string NetworkName
         {
             get { return "UrlReceiver"; }
@@ -15,9 +20,17 @@ namespace Assets.Scripts.Receivables
 
         public void ReceiveMessage(Message message)
         {
-//            var parsedMessage = UrlMessage.Build(message.payload);
+            UrlMessage urlMessage = UrlMessage.Build(message.payload);
+            if (urlMessage.description != null)
+            {
+                description.text = urlMessage.description.Replace("\\n", "\n");
+            }
+            title.text = urlMessage.title;
+
+            panel.Link= urlMessage.refLink;
+
             ImageManager.StartCoroutine("DownloadImage",
-                message.payload);
+                urlMessage.url);
         }
     }
 }

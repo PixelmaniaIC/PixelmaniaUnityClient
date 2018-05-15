@@ -260,7 +260,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000003157311, y: -91.749954}
+  m_AnchoredPosition: {x: 0.000018414974, y: -91.749954}
   m_SizeDelta: {x: 0, y: 183.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35265788
@@ -295,10 +295,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+  m_Text: "Lorem ips dolor sit \namet, consectetur adipiscing elit. Integer nec odio.
     Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh
     elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
-    augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. \r\n\r\nClass
+    augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. \r\n\nClass
     aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
     Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.
     Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
@@ -1800,6 +1800,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factsPanel: {fileID: 678339150}
+  refLink: {fileID: 1021605544}
+  link: 
 --- !u!1 &713007511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,7 +2372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57ec9d2347e6194096eb32fd40509aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  host: 104.215.180.214
+  host: localhost
   port: 4040
 --- !u!114 &1007051849
 MonoBehaviour:
@@ -2384,6 +2386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImageManager: {fileID: 1683412550}
+  panel: {fileID: 678339154}
+  description: {fileID: 35265788}
+  title: {fileID: 636184006}
 --- !u!114 &1007051850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2408,6 +2413,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ImageManager: {fileID: 1683412550}
+  panel: {fileID: 678339154}
+  description: {fileID: 35265788}
+  title: {fileID: 636184006}
 --- !u!114 &1007051852
 MonoBehaviour:
   m_ObjectHideFlags: 0

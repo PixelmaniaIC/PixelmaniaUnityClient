@@ -1,10 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FactsPanelUI : MonoBehaviour {
 
     public GameObject factsPanel;
+
+    public Text refLink;
+    private string _link;
+
+    public string Link {
+        get { return _link; }
+        set
+        {
+            refLink.text = "READ MORE";
+            _link = value;
+        }
+    }
+
+    public string link;
 
     public void Close()
     {
@@ -12,7 +27,10 @@ public class FactsPanelUI : MonoBehaviour {
     }
 
     public void OpenURL()
-    {        
-        Application.OpenURL("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    {
+        if (_link != null)
+        {
+            Application.OpenURL(_link);
+        }
     }
 }
