@@ -44,7 +44,7 @@ namespace Assets
             _collider.enabled = isEnabled;
         }
  
-        /*IEnumerator SingleOrDouble(){
+        IEnumerator SingleOrDouble(){
             yield return new WaitForSeconds(0.2f);
             if (_touch.tapCount == 2)
             {
@@ -61,7 +61,7 @@ namespace Assets
                 StopCoroutine("SingleOrDouble");
                 _lastUpdate = 0;
             }
-        }*/
+        }
 
         private void PopUpPrompt()
         {
@@ -75,11 +75,6 @@ namespace Assets
 
         void OnMouseDown()
         {
-            SendColorsToServer();
-            Cube.SetActive(false);
-            //StopCoroutine("SingleOrDouble");
-            _lastUpdate = 0;
-            /*
             if (Input.touchCount > 0) 
             {
                 FindObjectOfType<AudioManager>().Play("OpenSquare");
@@ -94,7 +89,7 @@ namespace Assets
                 {
                     _lastUpdate = 0.0f;
                 }
-            }*/
+            }
         }
 
         public void SendColorsToServer()
